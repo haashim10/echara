@@ -1,0 +1,26 @@
+import { Router } from "express";
+
+import { notImplementedHandler } from "../controllers/base";
+
+const router = Router();
+
+router.get("/vendors", notImplementedHandler("List vendors for admin"));
+router.post(
+  "/vendors/:id/status",
+  notImplementedHandler("Update vendor status"),
+);
+router.post(
+  "/listings/:id/visibility",
+  notImplementedHandler("Toggle listing visibility"),
+);
+router.post(
+  "/reviews/:id/hide",
+  notImplementedHandler("Hide review from admin"),
+);
+router.get(
+  "/analytics/overview",
+  notImplementedHandler("Admin analytics overview"),
+);
+router.get("/logs", notImplementedHandler("Admin audit logs"));
+
+export default router;

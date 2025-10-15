@@ -1,0 +1,405 @@
+Echara — Product & Technical 
+Specification (v1.1, MVP)  
+Admin:  Web -only  
+ AI recommendations:  Reserved for later phase  
+ Platforms:  Cross -platform mobile (iOS/Android) + Web (buyer & vendor) + Web Admin  
+ Region:  UK only  
+0) Branding & Design Guardrails  
+• Name:  Echara  
+• Logo (placeholder):  Wedding cake icon  
+• Palette:  Cream #f4f3ea (70%), Cognac #9c7b70 (20%), Honeysuckle #d03952 
+(10%)  
+• Buyer UX:  Mirror Airbnb flow and patterns with our palette.  
+• Vendor UX:  Mirror Monzo dashboard patterns (cards, insights, rounded 
+visualisations).  
+• Typography:  Inter / SF Pro Display / Poppins  
+• A11y:  WCAG AA; text contrast ≥ 4.5:1; keyboard nav; labels for form inputs.  
+ 
+1) Architecture Overview  
+1.1 Stack (MVP, free -tier friendly)  
+• Mobile:  React Native (Expo)  
+• Web:  Next.js (App Router)  
+• Backend:  Node.js + Express (hosted on Vercel serverless functions where 
+feasible; long -lived sockets on a minimal Node instance, e.g., a single small 
+VM/Render/Dokku)  
+• Realtime:  Socket.IO (separate small Node process)  
+• DB:  MongoDB Atlas (EU region)  
+• Auth:  Firebase Auth (Email/Password, Google, Apple)  
+• Storage:  Firebase Storage (images, docs)  
+• Push:  Firebase Cloud Messaging (mobile + web push)  
+• Email:  Resend or SendGrid (free tier)  
+• Maps/Geo:  Google Maps Platform (Places + Maps + Geocoding)  
+• Calendar sync:  Google Calendar API (OAuth)  
+• Admin:  Next.js web app behind role -gated access  
+• CI/CD:  Vercel (web + APIs) + EAS (Expo) for mobile builds  
+Note:  For Socket.IO (stateful), host a tiny Node process separate from Vercel. Keep 
+messages also persisted in MongoDB.  
+1.2 Environments  
+• dev  (shared sandbox)  
+• stage  (pre -prod, limited data)  
+• prod  (real users)  
+1.3 Env Vars (indicative)  
+FIREBASE_PROJECT_ID=  
+FIREBASE_CLIENT_EMAIL=  
+FIREBASE_PRIVATE_KEY=  
+NEXT_PUBLIC_FIREBASE_API_KEY=  
+MONGODB_URI=  
+JWT_SECRET=  
+GCLOUD_MAPS_API_KEY=  
+RESEND_API_KEY=  # or SENDGRID_API_KEY  
+FCM_SERVER_KEY=  
+GOOGLE_OAUTH_CLIENT_ID=  
+GOOGLE_OAUTH_CLIENT_SECRET=  
+APP_BASE_URL=  
+ 
+ 
+2) Roles & Permissions  
+• Buyer:  browse, filter, wishlist, request bookings, chat, review after completion.  
+• Vendor:  create/manage business profile, create listings, approve/decline 
+bookings, chat, view insights, manage subscription (trial → £29/month), connect 
+Google Calendar, receive email alerts.  
+• Admin (web -only):  approve/reject vendors, manage listings, moderate reviews 
+& photos, view platform analytics, access dispute view (read -only chat), 
+suspend accounts, toggle “featured”.  
+AuthZ model: Role claims issued post -sign -in (Firebase custom claims or server -side 
+role lookup). All APIs enforce role checks.  
+ 
+3) Functional Modules & Acceptance Criteria  
+3.1 Authentication & Profile  
+• Sign -in methods:  Email/Password, Google, Apple.  
+• AC:  
+o Able to register and sign in/out on all platforms.  
+o Role assigned at first vendor onboarding.  
+o Session refresh without losing state.  
+o GDPR: endpoint to export and delete user data.  
+3.2 Vendor Onboarding & Business Profile  
+Fields:  businessName, yearsInBusiness, description, tags[], socialLinks{instagram, 
+tiktok, website}, address + geocode, heroImage, gallery[], trialEndDate, 
+subscriptionStatus(trial|active|past_due|canceled).  
+• AC:  
+o Vendor can complete onboarding wizard and save a draft.  
+o Trial starts at first activation; free for 60 days; hard -block paid features 
+post -trial (but allow profile edits).  
+o Admin can mark vendor as “approved” before listings go public (soft trust 
+even though no document verification).  
+3.3 Listings  
+Fields:  vendorId, category, priceRange{min,max,currency}, description, gallery[], 
+location{lat,lng,address}, availability[], policies{depositPercent, cancellationWindow, 
+refundRules}, ratingSummary{avgOverall, count}.  
+• AC:  
+o Create/edit/delete listing, upload media, validate categories.  
+o Listing visible in search upon Admin approval (configurable: “auto -
+publish on vendor approval”).  
+o Map pin displays correctly; directions link opens map.  
+o Availability preview reflects connected calendar (read -only import in 
+MVP).  
+3.4 Search & Discovery (Buyer)  
+• Filters:  category, price range, location radius, rating, availability window.  
+• Sort:  relevance, rating, price, most reviewed.  
+• AC:  
+o Query returns paginated results < 300ms p95 on stage data.  
+o Empty -state and no -result states implemented.  
+o “Save to Wishlist” persists per user.  
+3.5 Booking Requests (No in -app payment)  
+Status flow: pending -> confirmed | declined -> completed | canceled  
+• AC:  
+o Buyer can propose date/time from vendor slots (pre -filled from vendor 
+availability or connected calendar).  
+o Vendor receives push + email; can approve/decline.  
+o Booking timeline shows state changes with timestamps.  
+o Payment fields are logging only : vendor can mark amount/method/date 
+for record; no processing in app.  
+o Cancellations respected with reason capture (buyer/vendor sides).  
+o Completion can be auto -prompted by date + vendor confirmation.  
+3.6 Messaging (Realtime)  
+• Features:  socket rooms per buyer ↔vendor pair, message types text|image|file, 
+typing, read receipts.  
+• AC:  
+o Messages persist in MongoDB; offline delivery works.  
+o Rate -limit media size (e.g., 10MB) and file types (jpg/png/pdf).  
+o Chat is available only after a buyer initiates an enquiry or booking 
+request.  
+3.7 Reviews & Ratings  
+• Who:  Buyer after “completed” booking.  
+• Criteria:  quality, communication, value, professionalism (1 –5 stars), optional 
+text.  
+• Vendor reply:  single public response, editable within 24 hours.  
+• AC:  
+o One review per booking.  
+o Aggregate ratings recalculated on write.  
+o Admin can hide reviews violating policy (retain audit log).  
+3.8 Vendor Insights (Monzo -like)  
+• KPIs:  earnings overview (logged), bookings & enquiries, cancellation rate, 
+conversion rate (views→bookings), ad spend (manual entry in MVP), top listings, 
+basic buyer geo/demographics (from profiles).  
+• AC:  
+o Month/quarter toggles; charts render in < 500ms once data loaded.  
+o All metrics backed by aggregation pipelines with test fixtures.  
+3.9 Notifications  
+• Push:  booking status changes, new messages, review posted, trial ending, 
+subscription status changes.  
+• Email (vendors):  booking requests, daily digest, trial reminders, subscription 
+receipts (when Stripe added).  
+• AC:  
+o Deduplicated notifications; in -app bell shows unread counts.  
+o User can mute categories.  
+3.10 Admin (Web -only)  
+• Vendor mgmt:  approve/reject, suspend, feature.  
+• Listing mgmt:  edit/hide/remove media.  
+• Moderation:  reviews/photos flag queue.  
+• Analytics:  active vendors/buyers, bookings, category heatmaps, rating 
+distribution, growth curves.  
+• Disputes:  read -only chat view, manual notes.  
+• AC:  
+o All admin actions logged in AdminLogs with who/when/what.  
+o Role -based access; admin portal not publicly indexed.  
+3.11 Subscription (Vendor)  
+• Plan:  £29/month after 60 -day free trial.  
+• MVP billing:  optionally stubbed. If Stripe not integrated, show “Upgrade” flow as 
+mock with manual flag by admin.  
+• AC:  
+o Trial countdown visible; post -trial gates insights & booking approvals until 
+plan is active (configurable which features lock).  
+3.12 Phase 2 Placeholder (Not in MVP)  
+• AI Recommendations:  “Vendors you may like” using category, location, 
+behaviour; embeddings later.  
+• Stripe Connect:  escrow or marketplace payouts.  
+• CSV exports for tax.  
+• Sponsored listings/ads.  
+ 
+4) Data Model (Mongo, high -level)  
+// users  
+{ 
+  _id, role: 'buyer'|'vendor'|'admin',  
+  name, email, avatarUrl, favourites: [listingId],  
+  createdAt, updatedAt, gdprDeletedAt?  
+} 
+ 
+// vendors  
+{ 
+  _id, userId, businessName, yearsInBusiness, description,  
+  tags: [string], socialLinks: { instagram?, tiktok?, website? },  
+  address, geo: { lat, lng }, gallery: [url], heroImage,  
+  status: 'pending'|'approved'|'suspended',  
+  subscriptionStatus: 'trial'|'active'|'past_due'|'canceled',  
+  trialEndDate, adSpendMonthly?: number,  
+  createdAt, updatedAt  
+} 
+ 
+// listings  
+{ 
+  _id, vendorId, category, priceRange: { min, max, currency: 'GBP' },  
+  description, gallery: [url],  
+  location: { lat, lng, address },  
+  availability: [{ startISO, endISO, source: 'manual'|'google' }],  
+  policies: { depositPercent?, cancellationWindowDays?, refundRules? },  
+  ratingSummary: { avgOverall, count, criteriaAvg: { quality, communication, value, 
+professionalism } },  
+  isFeatured: boolean, isVisible: boolean,  
+  createdAt, updatedAt  
+} 
+ 
+// bookings  
+{ 
+  _id, buyerId, vendorId, listingId,  
+  status: 'pending'|'confirmed'|'declined'|'completed'|'canceled',  
+  requestedSlot: { startISO, endISO },  
+  approvedAt?, declinedAt?, completedAt?, canceledAt?, cancelReason?,  
+  paymentLogged?: { amountGBP, method: 'cash'|'bank'|'other', dateISO, notes? },  
+  messagesThreadId,  
+  createdAt, updatedAt  
+} 
+ 
+// chats  
+{ 
+  _id, buyerId, vendorId, listingId,  
+  messages: [{ _id, senderId, type: 'text'|'image'|'file', contentUrlOrText, createdAt, 
+seenBy: [userId] }],  
+  lastMessageAt  
+} 
+ 
+// reviews  
+{ 
+  _id, bookingId, buyerId, vendorId, listingId,  
+  ratings: { quality, communication, value, professionalism },  
+  overall: number, comment, vendorReply?, repliedAt?,  
+  createdAt, updatedAt, hiddenByAdmin?: boolean  
+} 
+ 
+// notifications  
+{ 
+  _id, userId, type, title, body, data, isRead, createdAt  
+} 
+ 
+// admin logs  
+{ 
+  _id, performedByAdminId, action, targetType, targetId, metadata, createdAt  
+} 
+ 
+Indexes (examples):  
+• listings: { category: 1, "location.lat": 1, "location.lng": 1 }, text index on 
+description,tags.  
+• bookings: { vendorId: 1, status: 1, requestedSlot.startISO: 1 }.  
+• chats: { buyerId: 1, vendorId: 1, lastMessageAt: -1 }. 
+• reviews: { vendorId: 1, createdAt: -1 }. 
+ 
+5) Public API (REST) — Outline  
+Base path: /api/v1  
+Auth & Profile  
+• POST /auth/register (email/pw)  
+• POST /auth/login  
+• POST /auth/oauth/callback (Google/Apple)  
+• GET /me — current user & role  
+• DELETE /me — GDPR delete  
+• GET /me/favourites / POST /me/favourites/:listingId  
+Vendors  
+• POST /vendors — create/update profile (role -guarded)  
+• GET /vendors/:id  
+• GET /vendors/:id/insights?range=month|quarter  
+• POST /vendors/:id/calendar/google/connect  
+• DELETE /vendors/:id/calendar/google/disconnect  
+Listings  
+• POST /listings (vendor)  
+• PUT /listings/:id (vendor)  
+• DELETE /listings/:id (vendor/admin)  
+• GET /listings/:id  
+• GET 
+/listings/search?category&lat&lng&radius&minPrice&maxPrice&rating&availabl
+eFrom&availableTo&sort&page&limit  
+Bookings  
+• POST /bookings — buyer creates request  
+• GET /bookings/:id  
+• POST /bookings/:id/approve (vendor)  
+• POST /bookings/:id/decline (vendor)  
+• POST /bookings/:id/cancel (buyer/vendor)  
+• POST /bookings/:id/complete (vendor)  
+• POST /bookings/:id/payment -log (vendor)  
+Chat (REST + Sockets)  
+• GET /chats?as=buyer|vendor — list conversations  
+• GET /chats/:id — history (paginated)  
+• Socket events:  
+o chat:join {chatId}  
+o chat:message {chatId, type, payload}  
+o chat:typing {chatId}  
+o chat:seen {chatId, messageId}  
+Reviews  
+• POST /reviews — after completed booking  
+• GET /vendors/:id/reviews?page&limit  
+• POST /reviews/:id/reply (vendor)  
+• DELETE /reviews/:id (admin hide → sets hiddenByAdmin)  
+Notifications  
+• GET /notifications  
+• POST /notifications/:id/read  
+Admin (web -only; role -guarded)  
+• GET /admin/vendors?status=pending|approved|suspended  
+• POST /admin/vendors/:id/status  
+• POST /admin/listings/:id/visibility  
+• POST /admin/reviews/:id/hide  
+• GET /admin/analytics/overview?from&to  
+• GET /admin/logs?page&limit  
+ 
+6) Validation & Business Rules (selected)  
+• Vendor approval  required before any listings are publicly searchable.  
+• Booking conflict check:  vendor cannot approve overlapping confirmed 
+bookings.  
+• Review eligibility:  only for completed bookings, 30 -day window to review.  
+• Media upload:  virus/mime validation server -side; max 10MB per file.  
+• Rate limits:  chat messages (e.g., 30/min per user), search (e.g., 60/min/IP).  
+• GDPR delete:  anonymise PII; retain booking aggregations with detached IDs.  
+ 
+7) Notifications Matrix (sample)  
+Trigger  Recipient  Push  Email  In-App  
+Booking requested  Vendor           
+Booking 
+approved/declined  Buyer     —    
+New chat message  Both     (vendor digest 
+optional)     
+Review posted  Vendor           
+Trial ending in 7 days  Vendor           
+Account suspended 
+(admin)  Vendor           
+ 
+8) Vendor Insights — Aggregations  
+• Earnings overview:  sum(bookings.paymentLogged.amountGBP) by 
+month/quarter.  
+• Bookings & enquiries:  count bookings by status, time.  
+• Cancellation rate:  canceled / confirmed.  
+• Conversion rate:  (confirmed bookings) / (listing views). Track ListingViews as a 
+light collection { listingId, userId?, ts }.  
+• Ad spend:  manual input retained per month.  
+• Top listings:  by confirmed bookings or page views.  
+• Buyer geo:  from buyer profile or IP -to-geo (rough; optional).  
+ 
+9) Security & Compliance  
+• Transport:  HTTPS only; HSTS.  
+• Auth:  Firebase ID tokens verified on server; JWT for server -issued sessions if 
+needed.  
+• Input sanitisation:  zod/yup on all request bodies.  
+• Upload safety:  mime sniff + size limits + signed URLs.  
+• Secrets:  .env, never in repo.  
+• GDPR:  privacy policy, DSR (export/delete), data minimisation, EU data region on 
+Atlas.  
+• Abuse:  content reporting, IP throttling, photo moderation toggle (admin hide).  
+ 
+10) Performance, Observability, Testing  
+• API p95:  < 300ms for search/read ops on stage data.  
+• Caching:  CDN cache for listing pages & images; short -TTL search cache (e.g., 
+30s mem cache).  
+• Logs:  structured JSON logs; error tracking via Sentry (free tier).  
+• Tests:  
+o Unit tests for services & validators  
+o Integration tests for core flows (auth, listing CRUD, booking flow, chat)  
+o E2E smoke (Playwright) for web, basic Detox for mobile critical paths  
+ 
+11) Deployment & Release  
+• Web (buyer/vendor/admin):  Vercel preview → protected stage → prod.  
+• API:  Vercel functions (stateless) + tiny Node host for Sockets.  
+• Mobile:  Expo EAS builds; internal testing via TestFlight & Play Console.  
+• Feature flags:  simple collection FeatureFlags to toggle admin -only features.  
+ 
+12) Category Set (seed for UK weddings & events)  
+Example categories (extensible):  
+ Venues, Photographers, Videographers, Caterers, Cake Makers, Florists, DJs, Live 
+Bands, Decor & Styling, Car Hire, Hair & Makeup, Suits, Dresses, Invitations, Lighting & 
+AV, Marquees & Tents, Event Planners, Officiants, Entertainment (magicians etc.), 
+Pho to Booths, Favours & Gifts, Security, Clean -up 
+You can prune further later. The user -facing filters should group smartly (e.g., “Food & 
+Drink”, “Music & Entertainment”, “Beauty & Attire”, “Venues & Spaces”, “Planning & 
+Styling”).  
+ 
+13) Admin Analytics (Web -only)  
+Dashboards:  
+• Overview:  Active buyers/vendors, new signups, bookings requested/confirmed, 
+cancellations, top categories.  
+• Geography:  heatmap of listings and bookings by UK region.  
+• Quality:  average ratings by category; flag vendors < 3.2 stars or with high cancel 
+rate.  
+• Growth:  MAU/WAU/DAU, conversion funnel (view → request → confirm).  
+• Ops:  moderation queue length, SLA to decision, dispute notes.  
+ 
+14) MVP Cutline (what’s IN vs OUT)  
+IN: 
+• Cross -platform apps + web  
+• Real -time chat & media  
+• Booking approvals (no payments)  
+• Reviews & vendor replies  
+• Vendor insights (without CSV export)  
+• Push + vendor email notifications  
+• Google Calendar read -only sync  
+• Admin web -only portal  
+OUT (Phase 2+):  
+• AI recommendations  
+• Stripe/escrow payments  
+• CSV exports for tax  
+• Sponsored listings/ads  
+• Sophisticated fraud detection  
+ 
+15) Open Questions / Config Decisions  
+• Auto -publish policy:  After vendor approval, should new listings auto -publish or 
+require per -listing approval? (Default: auto -publish; admin can hide.)  
+• Availability source of truth:  If Google Calendar connected, do we block  
+manual slots that conflict or just flag? (Default: block.)  
+• Post -trial gating:  Which features are blocked when trial ends and subscription 
+inactive? (Default: booking approval & insights locked; profile/listing edit 
+allowed.)  
+ 

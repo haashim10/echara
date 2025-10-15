@@ -1,0 +1,1740 @@
+
+> @echara/api@0.1.0 dev /Users/HaashimsAccount/Desktop/Echara/apps/api
+> tsx watch src/server.ts
+
+[2025-10-10 23:24:19.109 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:24:19 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/query/castFilterPath.js Rerunning...
+c[2025-10-10 23:24:20.461 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:20.464 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:24:20 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/model/applyStaticHooks.js Restarting...
+[2025-10-10 23:24:20.687 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c11:24:20 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/schema/getIndexes.js Restarting...
+c11:24:20 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/types/array/methods/index.js Restarting...
+c[2025-10-10 23:24:21.780 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:24:24 PM [tsx] change in ./../../node_modules/.pnpm/raw-body@2.5.2/node_modules/raw-body/index.js Rerunning...
+c11:24:24 PM [tsx] change in ./../../node_modules/.pnpm/utils-merge@1.0.1/node_modules/utils-merge/index.js Restarting...
+c[2025-10-10 23:24:25.337 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:25.341 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:24:25 PM [tsx] change in ./../../node_modules/.pnpm/http-status-codes@2.3.0/node_modules/http-status-codes/build/cjs/legacy.js Restarting...
+[2025-10-10 23:24:25.593 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:24:26.166 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:24:27 PM [tsx] change in ./../../node_modules/.pnpm/helmet@8.1.0/node_modules/helmet/index.mjs Rerunning...
+c[2025-10-10 23:24:28.216 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:28.220 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:24:30 PM [tsx] change in ./../../node_modules/.pnpm/mongodb-connection-string-url@3.0.2/node_modules/mongodb-connection-string-url/lib/index.js Restarting...
+11:24:30 PM [tsx] change in ./../../node_modules/.pnpm/mpath@0.9.0/node_modules/mpath/lib/index.js Process hasn't exited. Killing process...
+c11:24:30 PM [tsx] change in ./../../node_modules/.pnpm/memory-pager@1.5.0/node_modules/memory-pager/index.js Restarting...
+c[2025-10-10 23:24:31.445 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:31.449 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:24:33 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/mongo_client.js Restarting...
+11:24:34 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/command_monitoring_events.js Process hasn't exited. Killing process...
+c11:24:34 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cursor/list_search_indexes_cursor.js Restarting...
+c11:24:34 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/auth/scram.js Restarting...
+c11:24:34 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/auth/mongodb_oidc/token_cache.js Restarting...
+c11:24:34 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/wire_protocol/on_demand/document.js Restarting...
+c[2025-10-10 23:24:35.238 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:24:36 PM [tsx] change in ./../../node_modules/.pnpm/kareem@2.6.3/node_modules/kareem/index.js Rerunning...
+c11:24:36 PM [tsx] change in ./../../node_modules/.pnpm/path-to-regexp@0.1.12/node_modules/path-to-regexp/index.js Restarting...
+c11:24:36 PM [tsx] change in ./../../node_modules/.pnpm/express-rate-limit@7.5.1_express@4.21.2/node_modules/express-rate-limit/dist/index.mjs Restarting...
+c11:24:36 PM [tsx] change in ./../../node_modules/.pnpm/whatwg-url@14.2.0/node_modules/whatwg-url/lib/Function.js Restarting...
+[2025-10-10 23:24:37.032 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:37.036 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-10 23:24:37.038 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+11:24:37 PM [tsx] change in ./../../node_modules/.pnpm/tr46@5.1.1/node_modules/tr46/index.js Process hasn't exited. Killing process...
+c11:24:37 PM [tsx] change in ./../../node_modules/.pnpm/tr46@5.1.1/node_modules/tr46/lib/regexes.js Restarting...
+c11:24:37 PM [tsx] change in ./../../node_modules/.pnpm/webidl-conversions@7.0.0/node_modules/webidl-conversions/lib/index.js Restarting...
+c[2025-10-10 23:24:37.949 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:37.952 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:24:38 PM [tsx] change in ./../../node_modules/.pnpm/bson@6.10.4/node_modules/bson/lib/bson.cjs Restarting...
+[2025-10-10 23:24:38.314 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:24:39.065 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:24:39 PM [tsx] change in ./../../node_modules/.pnpm/on-finished@2.3.0/node_modules/on-finished/index.js Rerunning...
+c[2025-10-10 23:24:40.101 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:40.106 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:24:40 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/set_profiling_level.js Restarting...
+11:24:41 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/insert.js Process hasn't exited. Killing process...
+c11:24:41 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/stats.js Restarting...
+c[2025-10-10 23:24:41.831 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+11:24:41 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/client_bulk_write/executor.js Restarting...
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+c11:24:42 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/client_bulk_write/client_bulk_write.js Restarting...
+c11:24:42 PM [tsx] change in ./../../node_modules/.pnpm/atomic-sleep@1.0.0/node_modules/atomic-sleep/index.js Restarting...
+[2025-10-10 23:24:42.581 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:42.586 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-10 23:24:42.590 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c11:24:42 PM [tsx] change in ./../../node_modules/.pnpm/slow-redact@0.3.1/node_modules/slow-redact/index.js Restarting...
+[2025-10-10 23:24:43.265 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:43.271 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-10 23:24:43.271 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:24:43.892 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:24:44 PM [tsx] change in ./../../node_modules/.pnpm/sift@17.1.3/node_modules/sift/lib/index.js Rerunning...
+c[2025-10-10 23:24:45.368 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:45.373 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:24:45 PM [tsx] change in ./../../node_modules/.pnpm/morgan@1.10.1/node_modules/morgan/index.js Restarting...
+[2025-10-10 23:24:45.730 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c11:24:46 PM [tsx] change in ./../../node_modules/.pnpm/mquery@5.0.0/node_modules/mquery/lib/mquery.js Restarting...
+c11:24:46 PM [tsx] change in ./../../node_modules/.pnpm/mquery@5.0.0/node_modules/mquery/lib/collection/node.js Restarting...
+c[2025-10-10 23:24:47.000 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:47.006 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:24:47 PM [tsx] change in ./../../node_modules/.pnpm/pino-std-serializers@7.0.0/node_modules/pino-std-serializers/lib/err-helpers.js Restarting...
+[2025-10-10 23:24:47.203 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:24:47.933 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:24:50 PM [tsx] change in ./../../node_modules/.pnpm/pino@9.13.1/node_modules/pino/pino.js Rerunning...
+c[2025-10-10 23:24:50.874 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:50.878 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:24:51 PM [tsx] change in ./../../node_modules/.pnpm/pino@9.13.1/node_modules/pino/lib/symbols.js Restarting...
+[2025-10-10 23:24:51.475 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:24:52.392 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:24:56 PM [tsx] change in ./../../node_modules/.pnpm/safe-stable-stringify@2.5.0/node_modules/safe-stable-stringify/index.js Rerunning...
+c11:24:56 PM [tsx] change in ./../../node_modules/.pnpm/real-require@0.2.0/node_modules/real-require/src/index.js Restarting...
+c11:24:57 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/search_indexes/create.js Restarting...
+[2025-10-10 23:24:57.412 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:57.419 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-10 23:24:57.419 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+11:24:57 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/search_indexes/drop.js Process hasn't exited. Killing process...
+c[2025-10-10 23:24:58.098 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:24:58 PM [tsx] change in ./../../node_modules/.pnpm/@mongodb-js+saslprep@1.3.1/node_modules/@mongodb-js/saslprep/dist/memory-code-points.js Rerunning...
+c11:24:58 PM [tsx] change in ./../../node_modules/.pnpm/safe-buffer@5.1.2/node_modules/safe-buffer/index.js Restarting...
+[2025-10-10 23:24:58.908 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:24:58.915 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-10 23:24:58.915 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:24:59.582 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:25:00 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/client-side-encryption/mongocryptd_manager.js Rerunning...
+c11:25:01 PM [tsx] change in ./../../node_modules/.pnpm/sonic-boom@4.2.0/node_modules/sonic-boom/index.js Restarting...
+[2025-10-10 23:25:01.354 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:25:01.358 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-10 23:25:01.359 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c11:25:01 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/client-side-encryption/providers/aws.js Restarting...
+c11:25:01 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/client-side-encryption/providers/index.js Restarting...
+c[2025-10-10 23:25:02.308 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:25:02.313 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:25:02 PM [tsx] change in ./../../node_modules/.pnpm/on-exit-leak-free@2.1.2/node_modules/on-exit-leak-free/index.js Restarting...
+[2025-10-10 23:25:02.682 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:25:03.345 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:25:04 PM [tsx] change in ./../../node_modules/.pnpm/split2@4.2.0/node_modules/split2/index.js Rerunning...
+c11:25:04 PM [tsx] change in ./../../node_modules/.pnpm/once@1.4.0/node_modules/once/once.js Restarting...
+c[2025-10-10 23:25:05.308 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:25:05 PM [tsx] change in ./../../node_modules/.pnpm/thread-stream@3.1.0/node_modules/thread-stream/lib/worker.js Rerunning...
+c[2025-10-10 23:25:06.328 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:25:06.332 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:25:08 PM [tsx] change in ./../../node_modules/.pnpm/pump@3.0.3/node_modules/pump/index.js Restarting...
+[2025-10-10 23:25:08.219 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:25:09.025 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:25:10 PM [tsx] change in ./../../node_modules/.pnpm/pino-pretty@11.3.0/node_modules/pino-pretty/lib/utils/handle-custom-levels-opts.js Rerunning...
+c11:25:11 PM [tsx] change in ./../../node_modules/.pnpm/pino-pretty@11.3.0/node_modules/pino-pretty/lib/utils/index.js Restarting...
+c[2025-10-10 23:25:11.709 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:25:13 PM [tsx] change in ./../../node_modules/.pnpm/wrappy@1.0.2/node_modules/wrappy/wrappy.js Rerunning...
+c11:25:13 PM [tsx] change in ./../../node_modules/.pnpm/end-of-stream@1.4.5/node_modules/end-of-stream/index.js Restarting...
+[2025-10-10 23:25:13.955 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:25:13.959 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-10 23:25:13.962 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:25:14.655 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:25:16 PM [tsx] change in ./../../node_modules/.pnpm/dotenv@16.6.1/node_modules/dotenv/lib/main.js Rerunning...
+c11:25:16 PM [tsx] change in ./../../node_modules/.pnpm/secure-json-parse@2.7.0/node_modules/secure-json-parse/index.js Restarting...
+[2025-10-10 23:25:16.963 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:25:16.967 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-10 23:25:16.968 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c11:25:17 PM [tsx] change in ./../../node_modules/.pnpm/fast-safe-stringify@2.1.1/node_modules/fast-safe-stringify/index.js Restarting...
+c11:25:17 PM [tsx] change in ./../../node_modules/.pnpm/colorette@2.0.20/node_modules/colorette/index.cjs Restarting...
+[2025-10-10 23:25:17.798 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:25:17.803 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-10 23:25:17.806 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c11:25:18 PM [tsx] change in ./../../node_modules/.pnpm/process@0.11.10/node_modules/process/index.js Restarting...
+c[2025-10-10 23:25:18.747 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:25:20 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/stream.js Rerunning...
+c11:25:20 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/internal/streams/buffer_list.js Restarting...
+c[2025-10-10 23:25:21.498 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:25:21.503 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:25:22 PM [tsx] change in ./../../node_modules/.pnpm/fast-copy@3.0.2/node_modules/fast-copy/dist/cjs/index.cjs Restarting...
+11:25:23 PM [tsx] change in ./../../node_modules/.pnpm/string_decoder@1.3.0/node_modules/string_decoder/lib/string_decoder.js Process hasn't exited. Killing process...
+c11:25:23 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/ours/errors.js Restarting...
+c11:25:23 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/ours/util/inspect.js Restarting...
+c[2025-10-10 23:25:23.979 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:25:24 PM [tsx] change in ./../../node_modules/.pnpm/pino-abstract-transport@2.0.0/node_modules/pino-abstract-transport/index.js Rerunning...
+c[2025-10-10 23:25:24.827 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:25:24.832 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:25:40 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/index.js Restarting...
+11:25:40 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/ZodError.js Process hasn't exited. Killing process...
+c11:25:40 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/helpers/parseUtil.js Restarting...
+c11:25:40 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/locales/en.js Restarting...
+c[2025-10-10 23:25:41.538 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:25:41.541 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:27:00 PM [tsx] change in ./src/utils/api-error.ts Restarting...
+11:27:00 PM [tsx] change in ./src/controllers/base.ts Process hasn't exited. Killing process...
+c[2025-10-10 23:27:01.753 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:27:01.757 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:27:26 PM [tsx] change in ./../../node_modules/.pnpm/has-symbols@1.1.0/node_modules/has-symbols/shams.js Restarting...
+[2025-10-10 23:27:26.884 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c11:27:27 PM [tsx] change in ./../../node_modules/.pnpm/get-intrinsic@1.3.0/node_modules/get-intrinsic/index.js Restarting...
+c11:27:27 PM [tsx] change in ./../../node_modules/.pnpm/has-symbols@1.1.0/node_modules/has-symbols/index.js Restarting...
+11:27:28 PM [tsx] change in ./../../node_modules/.pnpm/dunder-proto@1.0.1/node_modules/dunder-proto/get.js Process hasn't exited. Killing process...
+c[2025-10-10 23:27:28.563 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:27:28.567 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:27:31 PM [tsx] change in ./../../node_modules/.pnpm/debug@4.4.3/node_modules/debug/src/common.js Restarting...
+11:27:31 PM [tsx] change in ./../../node_modules/.pnpm/debug@4.4.3/node_modules/debug/src/index.js Process hasn't exited. Killing process...
+c[2025-10-10 23:27:32.193 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:27:32.197 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:27:33 PM [tsx] change in ./../../node_modules/.pnpm/get-proto@1.0.1/node_modules/get-proto/Reflect.getPrototypeOf.js Restarting...
+11:27:33 PM [tsx] change in ./../../node_modules/.pnpm/get-proto@1.0.1/node_modules/get-proto/Object.getPrototypeOf.js Process hasn't exited. Killing process...
+c[2025-10-10 23:27:34.475 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:27:34.479 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:27:45 PM [tsx] change in ./../../node_modules/.pnpm/supports-color@7.2.0/node_modules/supports-color/index.js Restarting...
+[2025-10-10 23:27:45.848 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:27:47.100 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:27:49 PM [tsx] change in ./../../node_modules/.pnpm/has-flag@4.0.0/node_modules/has-flag/index.js Rerunning...
+c[2025-10-10 23:27:50.084 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:27:50.091 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:27:50 PM [tsx] change in ./../../node_modules/.pnpm/call-bind-apply-helpers@1.0.2/node_modules/call-bind-apply-helpers/index.js Restarting...
+11:27:51 PM [tsx] change in ./../../node_modules/.pnpm/call-bind-apply-helpers@1.0.2/node_modules/call-bind-apply-helpers/actualApply.js Process hasn't exited. Killing process...
+c[2025-10-10 23:27:51.639 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:27:51.642 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:27:53 PM [tsx] change in ./../../node_modules/.pnpm/call-bind-apply-helpers@1.0.2/node_modules/call-bind-apply-helpers/reflectApply.js Restarting...
+11:27:53 PM [tsx] change in ./../../node_modules/.pnpm/call-bind-apply-helpers@1.0.2/node_modules/call-bind-apply-helpers/functionCall.js Process hasn't exited. Killing process...
+c[2025-10-10 23:27:53.789 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:27:53.793 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:27:57 PM [tsx] change in ./../../node_modules/.pnpm/es-errors@1.3.0/node_modules/es-errors/syntax.js Restarting...
+[2025-10-10 23:27:57.165 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:27:58.302 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:27:58 PM [tsx] change in ./../../node_modules/.pnpm/es-errors@1.3.0/node_modules/es-errors/ref.js Rerunning...
+c11:27:58 PM [tsx] change in ./../../node_modules/.pnpm/es-errors@1.3.0/node_modules/es-errors/uri.js Restarting...
+11:27:58 PM [tsx] change in ./../../node_modules/.pnpm/es-errors@1.3.0/node_modules/es-errors/index.js Process hasn't exited. Killing process...
+c[2025-10-10 23:27:59.505 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:27:59.509 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:28:00 PM [tsx] change in ./../../node_modules/.pnpm/es-errors@1.3.0/node_modules/es-errors/eval.js Restarting...
+11:28:01 PM [tsx] change in ./../../node_modules/.pnpm/es-errors@1.3.0/node_modules/es-errors/type.js Process hasn't exited. Killing process...
+c[2025-10-10 23:28:01.745 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:28:03 PM [tsx] change in ./../../node_modules/.pnpm/side-channel-weakmap@1.0.2/node_modules/side-channel-weakmap/index.js Rerunning...
+c[2025-10-10 23:28:03.866 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:28:03.870 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:28:11 PM [tsx] change in ./../../node_modules/.pnpm/object-assign@4.1.1/node_modules/object-assign/index.js Restarting...
+[2025-10-10 23:28:11.685 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c11:28:12 PM [tsx] change in ./../../node_modules/.pnpm/side-channel@1.1.0/node_modules/side-channel/index.js Restarting...
+c[2025-10-10 23:28:12.719 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:28:12.724 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:28:13 PM [tsx] change in ./../../node_modules/.pnpm/function-bind@1.1.2/node_modules/function-bind/index.js Restarting...
+[2025-10-10 23:28:13.449 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c11:28:14 PM [tsx] change in ./../../node_modules/.pnpm/gopd@1.2.0/node_modules/gopd/index.js Restarting...
+c[2025-10-10 23:28:14.521 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:28:14.525 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:28:17 PM [tsx] change in ./../../node_modules/.pnpm/side-channel-list@1.0.0/node_modules/side-channel-list/index.js Restarting...
+[2025-10-10 23:28:17.880 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:28:19.060 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:28:19 PM [tsx] change in ./../../node_modules/.pnpm/es-define-property@1.0.1/node_modules/es-define-property/index.js Rerunning...
+c[2025-10-10 23:28:19.971 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:28:19.975 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:28:25 PM [tsx] change in ./../../node_modules/.pnpm/es-object-atoms@1.1.1/node_modules/es-object-atoms/index.js Restarting...
+[2025-10-10 23:28:25.091 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:28:25.865 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:29:07 PM [tsx] change in ./../../node_modules/.pnpm/ms@2.1.3/node_modules/ms/index.js Rerunning...
+c[2025-10-10 23:29:08.091 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:29:08.096 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:29:10 PM [tsx] change in ./../../node_modules/.pnpm/math-intrinsics@1.1.0/node_modules/math-intrinsics/round.js Restarting...
+11:29:10 PM [tsx] change in ./../../node_modules/.pnpm/math-intrinsics@1.1.0/node_modules/math-intrinsics/sign.js Process hasn't exited. Killing process...
+c[2025-10-10 23:29:11.260 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:29:11.264 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:29:19 PM [tsx] change in ./../../node_modules/.pnpm/object-inspect@1.13.4/node_modules/object-inspect/util.inspect.js Restarting...
+[2025-10-10 23:29:19.924 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c11:29:20 PM [tsx] change in ./../../node_modules/.pnpm/object-inspect@1.13.4/node_modules/object-inspect/index.js Restarting...
+c[2025-10-10 23:29:21.039 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:29:21.044 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:29:48 PM [tsx] change in ./../../node_modules/.pnpm/side-channel-map@1.0.1/node_modules/side-channel-map/index.js Restarting...
+[2025-10-10 23:29:48.205 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-10 23:29:49.671 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:30:24 PM [tsx] change in ./src/routes/notifications.routes.ts Rerunning...
+c11:30:24 PM [tsx] change in ./src/middleware/error-handler.ts Restarting...
+c11:30:25 PM [tsx] change in ./src/routes/admin.routes.ts Restarting...
+c[2025-10-10 23:30:25.868 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+11:30:26 PM [tsx] change in ./src/routes/index.ts Rerunning...
+c[2025-10-10 23:30:27.164 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-10 23:30:27.168 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+11:59:46 AM [tsx] change in ./../../node_modules/.pnpm/safe-buffer@5.2.1/node_modules/safe-buffer/index.js Restarting...
+12:15:03 PM [tsx] Process didn't exit in 5s. Force killing...
+c[2025-10-11 12:15:04.006 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+12:15:04 PM [tsx] change in ./../../node_modules/.pnpm/express@4.21.2/node_modules/express/index.js Rerunning...
+c[2025-10-11 12:15:05.365 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 12:15:05.371 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+12:22:35 PM [tsx] change in ./../../node_modules/.pnpm/mime@1.6.0/node_modules/mime/mime.js Restarting...
+[2025-10-11 12:22:35.199 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 12:22:37.194 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+12:22:55 PM [tsx] change in ./../../node_modules/.pnpm/proxy-addr@2.0.7/node_modules/proxy-addr/index.js Rerunning...
+c12:22:55 PM [tsx] change in ./../../node_modules/.pnpm/ms@2.0.0/node_modules/ms/index.js Restarting...
+12:22:56 PM [tsx] change in ./../../node_modules/.pnpm/cors@2.8.5/node_modules/cors/lib/index.js Process hasn't exited. Killing process...
+c12:22:57 PM [tsx] change in ./../../node_modules/.pnpm/debug@2.6.9/node_modules/debug/src/index.js Restarting...
+[2025-10-11 12:22:57.295 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+c[2025-10-11 12:22:58.684 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 12:22:58.699 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+12:26:05 PM [tsx] change in ./../../node_modules/.pnpm/negotiator@0.6.4/node_modules/negotiator/lib/mediaType.js Restarting...
+12:26:06 PM [tsx] change in ./../../node_modules/.pnpm/qs@6.13.0/node_modules/qs/lib/formats.js Process hasn't exited. Killing process...
+c12:26:06 PM [tsx] change in ./../../node_modules/.pnpm/tsx@4.20.6/node_modules/tsx/dist/lexer-DgIbo0BU.cjs Restarting...
+c[2025-10-11 12:44:01.881 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+12:56:57 PM [tsx] change in ./../../node_modules/.pnpm/destroy@1.2.0/node_modules/destroy/index.js Rerunning...
+c12:56:58 PM [tsx] change in ./../../node_modules/.pnpm/cookie@0.7.1/node_modules/cookie/index.js Restarting...
+[2025-10-11 12:56:58.787 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+c12:56:59 PM [tsx] change in ./../../node_modules/.pnpm/depd@2.0.0/node_modules/depd/index.js Restarting...
+c[2025-10-11 12:57:00.282 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 12:57:00.290 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+12:57:00 PM [tsx] change in ./../../node_modules/.pnpm/express@4.21.2/node_modules/express/lib/middleware/init.js Restarting...
+[2025-10-11 12:57:00.503 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c12:57:00 PM [tsx] change in ./../../node_modules/.pnpm/fresh@0.5.2/node_modules/fresh/index.js Restarting...
+c12:57:01 PM [tsx] change in ./../../node_modules/.pnpm/negotiator@0.6.3/node_modules/negotiator/lib/charset.js Restarting...
+[2025-10-11 12:57:01.384 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 12:57:01.390 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-11 12:57:01.393 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 12:57:02.118 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 12:57:02.124 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+12:59:59 PM [tsx] change in ./../../node_modules/.pnpm/iconv-lite@0.4.24/node_modules/iconv-lite/lib/extend-node.js Restarting...
+[2025-10-11 12:59:59.679 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 13:00:04.459 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 13:00:04.463 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+1:00:05 PM [tsx] change in ./../../node_modules/.pnpm/iconv-lite@0.4.24/node_modules/iconv-lite/lib/index.js Restarting...
+[2025-10-11 13:00:05.072 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 13:00:05.908 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+1:01:57 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/utils.js Rerunning...
+c1:01:57 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/driver.js Restarting...
+c[2025-10-11 13:02:02.061 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 13:02:02.065 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+1:04:06 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/collection.js Restarting...
+[2025-10-11 13:04:06.546 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c1:04:06 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/cast.js Restarting...
+c1:04:07 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/browserDocument.js Restarting...
+c1:04:08 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/modifiedPathsSnapshot.js Restarting...
+1:04:08 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/get.js Process hasn't exited. Killing process...
+c[2025-10-11 13:04:09.864 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+1:05:56 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/document/getDeepestSubdocumentForPath.js Rerunning...
+c1:05:56 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/options/schemaBufferOptions.js Restarting...
+c1:05:56 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/error/cast.js Restarting...
+c1:05:56 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/types/decimal128.js Restarting...
+c1:05:57 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/types/buffer.js Restarting...
+c[2025-10-11 13:06:06.240 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 13:06:06.244 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+1:06:06 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/path/parentPaths.js Restarting...
+1:06:06 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/error/objectExpected.js Process hasn't exited. Killing process...
+c[2025-10-11 13:06:07.650 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 13:06:07.653 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+1:09:49 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/indexes/isTextIndex.js Restarting...
+1:09:50 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/projection/isNestedProjection.js Process hasn't exited. Killing process...
+c1:09:50 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/discriminator/applyEmbeddedDiscriminators.js Restarting...
+c1:09:50 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/schema/merge.js Restarting...
+1:09:50 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/drivers/node-mongodb-native/bulkWriteResult.js Process hasn't exited. Killing process...
+c1:09:50 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/discriminator/mergeDiscriminatorSchema.js Restarting...
+c1:09:51 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/query/castUpdate.js Restarting...
+1:09:51 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/schema/applyWriteConcern.js Process hasn't exited. Killing process...
+c1:09:51 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/schema/applyPlugins.js Restarting...
+1:09:51 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/types/documentArray/index.js Process hasn't exited. Killing process...
+c1:09:52 PM [tsx] change in ./../../node_modules/.pnpm/mongoose@8.19.1/node_modules/mongoose/lib/helpers/query/isOperator.js Restarting...
+c[2025-10-11 13:09:55.095 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+1:17:21 PM [tsx] change in ./../../node_modules/.pnpm/http-status-codes@2.3.0/node_modules/http-status-codes/build/cjs/index.js Rerunning...
+c[2025-10-11 13:17:21.820 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 13:17:21.823 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+1:34:09 PM [tsx] change in ./../../node_modules/.pnpm/mpath@0.9.0/node_modules/mpath/index.js Restarting...
+[2025-10-11 13:34:09.259 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c1:34:09 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/constants.js Restarting...
+c1:34:09 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/mongo_types.js Restarting...
+c[2025-10-11 13:34:11.281 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+1:38:18 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/stream_description.js Rerunning...
+c1:38:18 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cursor/explainable_cursor.js Restarting...
+c1:38:19 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/bulk/unordered.js Restarting...
+c1:38:19 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/sdam/server_selection_events.js Restarting...
+c[2025-10-11 13:38:20.078 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 13:38:20.083 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+1:39:59 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cursor/aggregation_cursor.js Restarting...
+[2025-10-11 13:39:59.733 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 13:40:00.835 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+1:40:15 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/wire_protocol/responses.js Rerunning...
+c1:52:33 PM [tsx] change in ./../../node_modules/.pnpm/path-to-regexp@0.1.12/node_modules/path-to-regexp/index.js Restarting...
+c1:52:33 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/auth/auth_provider.js Restarting...
+c1:52:34 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/auth/mongodb_oidc.js Restarting...
+c1:52:34 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/auth/mongo_credentials.js Restarting...
+c1:52:34 PM [tsx] change in ./../../node_modules/.pnpm/kareem@2.6.3/node_modules/kareem/index.js Restarting...
+c1:52:34 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/auth/mongodb_oidc/token_cache.js Restarting...
+c1:52:35 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/wire_protocol/on_demand/document.js Restarting...
+1:52:35 PM [tsx] change in ./../../node_modules/.pnpm/whatwg-url@14.2.0/node_modules/whatwg-url/webidl2js-wrapper.js Process hasn't exited. Killing process...
+c1:52:35 PM [tsx] change in ./../../node_modules/.pnpm/express-rate-limit@7.5.1_express@4.21.2/node_modules/express-rate-limit/dist/index.mjs Restarting...
+c1:52:35 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/auth/mongodb_oidc/human_callback_workflow.js Restarting...
+c1:52:36 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/auth/gssapi.js Restarting...
+c1:52:36 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/auth/mongodb_oidc/azure_machine_workflow.js Restarting...
+[2025-10-11 13:52:36.996 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 13:52:37.000 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-11 13:52:37.002 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+1:52:37 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/cmap/auth/aws_temporary_credentials.js Process hasn't exited. Killing process...
+c[2025-10-11 13:52:37.924 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 13:52:37.929 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+2:34:19 PM [tsx] change in ./../../node_modules/.pnpm/whatwg-url@14.2.0/node_modules/whatwg-url/lib/encoding.js Restarting...
+2:34:19 PM [tsx] change in ./../../node_modules/.pnpm/whatwg-url@14.2.0/node_modules/whatwg-url/lib/URLSearchParams.js Process hasn't exited. Killing process...
+c2:34:19 PM [tsx] change in ./../../node_modules/.pnpm/whatwg-url@14.2.0/node_modules/whatwg-url/lib/utils.js Restarting...
+c2:34:19 PM [tsx] change in ./../../node_modules/.pnpm/webidl-conversions@7.0.0/node_modules/webidl-conversions/lib/index.js Restarting...
+c[2025-10-11 14:47:13.377 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+2:47:13 PM [tsx] change in ./../../node_modules/.pnpm/tr46@5.1.1/node_modules/tr46/lib/regexes.js Rerunning...
+c[2025-10-11 14:47:14.531 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 14:47:14.537 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+2:53:35 PM [tsx] change in ./../../node_modules/.pnpm/on-finished@2.3.0/node_modules/on-finished/index.js Restarting...
+2:53:35 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/update.js Process hasn't exited. Killing process...
+c2:53:35 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/delete.js Restarting...
+2:53:35 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/rename.js Process hasn't exited. Killing process...
+c[2025-10-11 14:53:36.663 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 14:53:36.667 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+2:53:37 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/estimated_document_count.js Restarting...
+[2025-10-11 14:53:37.035 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c2:53:37 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/stats.js Restarting...
+c[2025-10-11 14:53:38.067 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+2:57:18 PM [tsx] change in ./../../node_modules/.pnpm/sift@17.1.3/node_modules/sift/lib/index.js Rerunning...
+c2:57:22 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/client_bulk_write/client_bulk_write.js Restarting...
+[2025-10-11 14:57:22.381 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 14:57:22.393 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-11 14:57:22.585 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+2:57:22 PM [tsx] change in ./../../node_modules/.pnpm/atomic-sleep@1.0.0/node_modules/atomic-sleep/index.js Process hasn't exited. Killing process...
+c[2025-10-11 14:57:24.289 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 14:57:24.302 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+3:13:55 PM [tsx] change in ./../../node_modules/.pnpm/pino-std-serializers@7.0.0/node_modules/pino-std-serializers/lib/req.js Restarting...
+3:13:55 PM [tsx] change in ./../../node_modules/.pnpm/pino-std-serializers@7.0.0/node_modules/pino-std-serializers/lib/err.js Process hasn't exited. Killing process...
+c[2025-10-11 15:13:56.593 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 15:13:56.602 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+3:16:25 PM [tsx] change in ./../../node_modules/.pnpm/pino@9.13.1/node_modules/pino/lib/constants.js Restarting...
+[2025-10-11 15:16:25.372 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c3:16:26 PM [tsx] change in ./../../node_modules/.pnpm/pino@9.13.1/node_modules/pino/lib/proto.js Restarting...
+c3:16:26 PM [tsx] change in ./../../node_modules/.pnpm/pino@9.13.1/node_modules/pino/lib/symbols.js Restarting...
+[2025-10-11 15:16:26.867 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 15:16:26.874 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-11 15:16:26.874 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c3:16:27 PM [tsx] change in ./../../node_modules/.pnpm/pino@9.13.1/node_modules/pino/lib/meta.js Restarting...
+c3:16:27 PM [tsx] change in ./../../node_modules/.pnpm/pino@9.13.1/node_modules/pino/lib/transport.js Restarting...
+c3:16:27 PM [tsx] change in ./../../node_modules/.pnpm/pino@9.13.1/node_modules/pino/lib/redaction.js Restarting...
+c3:16:27 PM [tsx] change in ./../../node_modules/.pnpm/pino@9.13.1/node_modules/pino/lib/tools.js Restarting...
+c[2025-10-11 15:16:28.598 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 15:16:28.602 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+3:16:28 PM [tsx] change in ./../../node_modules/.pnpm/pino@9.13.1/node_modules/pino/lib/multistream.js Restarting...
+[2025-10-11 15:16:28.784 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 15:16:29.665 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+3:47:28 PM [tsx] change in ./../../node_modules/.pnpm/quick-format-unescaped@4.0.4/node_modules/quick-format-unescaped/index.js Rerunning...
+c3:47:29 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/search_indexes/update.js Restarting...
+[2025-10-11 15:47:30.126 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 15:47:30.136 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-11 15:47:30.136 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c3:47:31 PM [tsx] change in ./../../node_modules/.pnpm/safe-stable-stringify@2.5.0/node_modules/safe-stable-stringify/index.js Restarting...
+3:47:31 PM [tsx] change in ./../../node_modules/.pnpm/real-require@0.2.0/node_modules/real-require/src/index.js Process hasn't exited. Killing process...
+c[2025-10-11 15:47:32.616 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+4:09:22 PM [tsx] change in ./../../node_modules/.pnpm/@mongodb-js+saslprep@1.3.1/node_modules/@mongodb-js/saslprep/dist/node.js Rerunning...
+c4:09:22 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/client-side-encryption/auto_encrypter.js Restarting...
+[2025-10-11 16:09:23.498 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:09:23.503 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-11 16:09:23.503 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c4:09:24 PM [tsx] change in ./../../node_modules/.pnpm/@mongodb-js+saslprep@1.3.1/node_modules/@mongodb-js/saslprep/dist/memory-code-points.js Restarting...
+[2025-10-11 16:09:24.411 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:09:24.429 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-11 16:09:24.430 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+4:09:24 PM [tsx] change in ./../../node_modules/.pnpm/safe-buffer@5.1.2/node_modules/safe-buffer/index.js Process hasn't exited. Killing process...
+c4:09:24 PM [tsx] change in ./../../node_modules/.pnpm/@mongodb-js+saslprep@1.3.1/node_modules/@mongodb-js/saslprep/dist/code-points-data.js Restarting...
+c4:09:25 PM [tsx] change in ./../../node_modules/.pnpm/@mongodb-js+saslprep@1.3.1/node_modules/@mongodb-js/saslprep/dist/index.js Restarting...
+c4:09:26 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/search_indexes/drop.js Restarting...
+4:09:26 PM [tsx] change in ./../../node_modules/.pnpm/sonic-boom@4.2.0/node_modules/sonic-boom/index.js Process hasn't exited. Killing process...
+c[2025-10-11 16:09:27.930 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:09:27.945 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+4:09:38 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/client-side-encryption/providers/index.js Restarting...
+4:09:38 PM [tsx] change in ./../../node_modules/.pnpm/thread-stream@3.1.0/node_modules/thread-stream/index.js Process hasn't exited. Killing process...
+c4:09:39 PM [tsx] change in ./../../node_modules/.pnpm/thread-stream@3.1.0/node_modules/thread-stream/lib/worker.js Restarting...
+c4:09:39 PM [tsx] change in ./../../node_modules/.pnpm/once@1.4.0/node_modules/once/once.js Restarting...
+c4:09:40 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/client-side-encryption/providers/azure.js Restarting...
+[2025-10-11 16:09:41.198 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:09:41.229 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-11 16:09:41.231 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 16:09:43.169 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+4:41:48 PM [tsx] change in ./../../node_modules/.pnpm/pino-pretty@11.3.0/node_modules/pino-pretty/index.js Rerunning...
+c[2025-10-11 16:41:49.652 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:41:49.656 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+4:47:42 PM [tsx] change in ./../../node_modules/.pnpm/wrappy@1.0.2/node_modules/wrappy/wrappy.js Restarting...
+4:47:43 PM [tsx] change in ./../../node_modules/.pnpm/pino-pretty@11.3.0/node_modules/pino-pretty/lib/utils/handle-custom-levels-names-opts.js Process hasn't exited. Killing process...
+c4:47:43 PM [tsx] change in ./../../node_modules/.pnpm/pino-pretty@11.3.0/node_modules/pino-pretty/lib/utils/format-time.js Restarting...
+c[2025-10-11 16:47:44.110 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:47:44.115 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+4:48:00 PM [tsx] change in ./../../node_modules/.pnpm/colorette@2.0.20/node_modules/colorette/index.cjs Restarting...
+[2025-10-11 16:48:00.331 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 16:48:02.111 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+4:49:49 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/stream/promises.js Rerunning...
+c4:49:49 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/internal/streams/operators.js Restarting...
+4:49:49 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/stream.js Process hasn't exited. Killing process...
+c4:49:49 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/ours/index.js Restarting...
+c4:55:33 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/internal/streams/state.js Restarting...
+[2025-10-11 16:55:34.183 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+c[2025-10-11 16:55:35.166 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+4:55:35 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/internal/streams/readable.js Restarting...
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+c4:55:35 PM [tsx] change in ./../../node_modules/.pnpm/string_decoder@1.3.0/node_modules/string_decoder/lib/string_decoder.js Restarting...
+c[2025-10-11 16:55:36.349 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+5:03:43 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/ZodError.js Rerunning...
+c5:03:43 PM [tsx] change in ./../../node_modules/.pnpm/pino-abstract-transport@2.0.0/node_modules/pino-abstract-transport/index.js Restarting...
+c5:03:43 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/helpers/util.js Restarting...
+c5:03:44 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/external.js Restarting...
+[2025-10-11 17:03:44.803 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 17:03:44.807 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-11 17:03:44.893 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+5:20:58 PM [tsx] Process didn't exit in 5s. Force killing...
+c[2025-10-11 17:20:59.609 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+5:52:09 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/helpers/parseUtil.js Rerunning...
+c[2025-10-11 17:56:34.026 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 17:56:34.039 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+6:20:06 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/locales/en.js Restarting...
+[2025-10-11 18:20:06.441 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 18:20:07.908 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+7:14:46 PM [tsx] change in ./src/routes/reviews.routes.ts Rerunning...
+c7:14:47 PM [tsx] change in ./src/routes/bookings.routes.ts Restarting...
+c[2025-10-11 19:15:29.720 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 19:15:29.725 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+7:15:30 PM [tsx] change in ./src/config/database.ts Restarting...
+[2025-10-11 19:15:30.156 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c7:15:30 PM [tsx] change in ./src/routes/vendors.routes.ts Restarting...
+c[2025-10-11 19:15:31.376 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+7:15:31 PM [tsx] change in ./src/config/logger.ts Rerunning...
+c[2025-10-11 19:15:32.809 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+ port: 4000
+4:09:22 PM [tsx] change in ./../../node_modules/.pnpm/@mongodb-js+saslprep@1.3.1/node_modules/@mongodb-js/saslprep/dist/node.js Restarting...
+4:09:22 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/client-side-encryption/auto_encrypter.js Process hasn't exited. Killing process...
+c[2025-10-11 16:09:23.584 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:09:23.589 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+4:09:24 PM [tsx] change in ./../../node_modules/.pnpm/@mongodb-js+saslprep@1.3.1/node_modules/@mongodb-js/saslprep/dist/memory-code-points.js Restarting...
+[2025-10-11 16:09:24.195 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+4:09:24 PM [tsx] change in ./../../node_modules/.pnpm/safe-buffer@5.1.2/node_modules/safe-buffer/index.js Process hasn't exited. Killing process...
+c4:09:24 PM [tsx] change in ./../../node_modules/.pnpm/@mongodb-js+saslprep@1.3.1/node_modules/@mongodb-js/saslprep/dist/code-points-data.js Restarting...
+c4:09:25 PM [tsx] change in ./../../node_modules/.pnpm/@mongodb-js+saslprep@1.3.1/node_modules/@mongodb-js/saslprep/dist/index.js Restarting...
+c4:09:26 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/operations/search_indexes/drop.js Restarting...
+4:09:26 PM [tsx] change in ./../../node_modules/.pnpm/sonic-boom@4.2.0/node_modules/sonic-boom/index.js Process hasn't exited. Killing process...
+c[2025-10-11 16:09:28.019 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+4:09:38 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/client-side-encryption/providers/index.js Rerunning...
+c4:09:38 PM [tsx] change in ./../../node_modules/.pnpm/thread-stream@3.1.0/node_modules/thread-stream/index.js Restarting...
+4:09:39 PM [tsx] change in ./../../node_modules/.pnpm/thread-stream@3.1.0/node_modules/thread-stream/lib/worker.js Process hasn't exited. Killing process...
+c4:09:39 PM [tsx] change in ./../../node_modules/.pnpm/once@1.4.0/node_modules/once/once.js Restarting...
+c4:09:40 PM [tsx] change in ./../../node_modules/.pnpm/mongodb@6.20.0/node_modules/mongodb/lib/client-side-encryption/providers/azure.js Restarting...
+c[2025-10-11 16:09:42.046 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:09:42.064 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+4:41:48 PM [tsx] change in ./../../node_modules/.pnpm/pino-pretty@11.3.0/node_modules/pino-pretty/index.js Restarting...
+[2025-10-11 16:41:48.931 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 16:41:50.051 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+4:47:42 PM [tsx] change in ./../../node_modules/.pnpm/wrappy@1.0.2/node_modules/wrappy/wrappy.js Rerunning...
+c4:47:43 PM [tsx] change in ./../../node_modules/.pnpm/pino-pretty@11.3.0/node_modules/pino-pretty/lib/utils/format-time.js Restarting...
+[2025-10-11 16:47:43.735 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:47:43.739 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-11 16:47:43.740 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 16:47:44.486 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+4:48:00 PM [tsx] change in ./../../node_modules/.pnpm/colorette@2.0.20/node_modules/colorette/index.cjs Rerunning...
+c[2025-10-11 16:48:01.568 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:48:01.581 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+4:49:49 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/stream/promises.js Restarting...
+[2025-10-11 16:49:49.199 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+4:49:49 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/ours/util.js Process hasn't exited. Killing process...
+c4:49:49 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/ours/index.js Restarting...
+c4:55:33 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/internal/streams/state.js Restarting...
+[2025-10-11 16:55:34.181 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:55:34.185 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+[2025-10-11 16:55:34.188 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 16:55:35.126 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:55:35.129 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+4:55:35 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/internal/streams/readable.js Restarting...
+[2025-10-11 16:55:35.324 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c4:55:35 PM [tsx] change in ./../../node_modules/.pnpm/readable-stream@4.7.0/node_modules/readable-stream/lib/ours/primordials.js Restarting...
+c[2025-10-11 16:55:36.328 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 16:55:36.334 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+5:03:43 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/ZodError.js Restarting...
+5:03:43 PM [tsx] change in ./../../node_modules/.pnpm/pino-abstract-transport@2.0.0/node_modules/pino-abstract-transport/index.js Process hasn't exited. Killing process...
+c5:03:43 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/helpers/util.js Restarting...
+c5:03:44 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/external.js Restarting...
+[2025-10-11 17:03:44.804 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+5:20:58 PM [tsx] Process didn't exit in 5s. Force killing...
+c[2025-10-11 17:20:59.608 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 17:20:59.612 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+5:52:09 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/helpers/parseUtil.js Restarting...
+[2025-10-11 17:52:09.321 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+5:56:33 PM [tsx] Process didn't exit in 5s. Force killing...
+c[2025-10-11 17:56:34.122 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+6:20:06 PM [tsx] change in ./../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/locales/en.js Rerunning...
+c[2025-10-11 18:20:07.901 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 18:20:07.962 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+7:14:46 PM [tsx] change in ./src/routes/reviews.routes.ts Restarting...
+[2025-10-11 19:14:46.835 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c7:14:47 PM [tsx] change in ./src/routes/bookings.routes.ts Restarting...
+c[2025-10-11 19:15:29.721 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at bootstrap (/Users/HaashimsAccount/Desktop/Echara/apps/api/src/server.ts:15:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.14.0
+7:15:30 PM [tsx] change in ./src/config/database.ts Rerunning...
+c7:15:30 PM [tsx] change in ./src/routes/vendors.routes.ts Restarting...
+c[2025-10-11 19:15:31.368 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+[2025-10-11 19:15:31.372 +0100] [32mINFO[39m: [36mAPI server listening[39m
+    port: 4000
+7:15:31 PM [tsx] change in ./src/config/logger.ts Restarting...
+[2025-10-11 19:15:31.921 +0100] [32mINFO[39m: [36mShutting down gracefully[39m
+    signal: "SIGTERM"
+c[2025-10-11 19:15:32.866 +0100] [33mWARN[39m: [36mSkipping MongoDB connection - MONGODB_URI not configured[39m
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)

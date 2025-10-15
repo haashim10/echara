@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --color-background: #f4f3ea;
+  --color-surface: #ffffff;
+  --color-foreground: #1a1a1a;
+  --color-muted: #9c7b70;
+  --color-accent: #d03952;
+  --color-accent-soft: #f6d8dd;
+  --color-border: #ded6cf;
+  --shadow-soft: 0 10px 30px rgba(27, 24, 21, 0.08);
+}
+
+@theme inline {
+  --font-sans: "Inter", "SF Pro Display", "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Poppins", "Inter", "SF Pro Display", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --color-brand-primary: var(--color-accent);
+  --color-brand-secondary: var(--color-muted);
+  --color-brand-surface: var(--color-background);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+
+  --shadow-card: var(--shadow-soft);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #1f1b18;
+    --color-surface: #26211d;
+    --color-foreground: #f5f3f1;
+    --color-muted: #c5a69d;
+    --color-accent: #ff5a73;
+    --color-accent-soft: rgba(255, 90, 115, 0.2);
+    --color-border: #3d332c;
+    --shadow-soft: 0 14px 28px rgba(0, 0, 0, 0.25);
+  }
+}

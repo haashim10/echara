@@ -1,0 +1,446 @@
+Echara — Jira -Ready Product 
+Development Plan (v1.0, MVP)  
+Goal:  Deliver MVP across Buyer, Vendor, and Admin experiences for Echara (cross -
+platform + web).  
+ MVP Duration:  ~12 weeks total, across 4 major sprints.  
+ AI Recommendations & Stripe Payments:  deferred to Phase 2.  
+ Admin:  web -only.  
+ 
+🚀 EPIC 1 — Core Infrastructure & Setup  
+Objective:  Establish the project skeleton, environments, and authentication 
+foundation.  
+🧩 User Stories  
+I
+D Story  Acceptance Criteria  Tech Notes  P
+r
+i
+o
+r
+i
+t
+y 
+I
+N
+F
+-
+1 As a developer, I can deploy 
+base web and API projects so 
+that all environments are 
+accessible.     Next.js 
+buyer/vendor web and 
+Node API deployed on 
+Vercel dev env.  
+   Health check /ping 
+route returns 200.  Init repo monorepo 
+(Turborepo/PNPM). 
+CI via Vercel 
+previews.     
+H
+i
+g
+h 
+I
+N
+F
+-
+2 As a developer, I can connect 
+Firebase Auth and MongoDB 
+Atlas.     Sign -in/out works 
+via Email.  
+   User doc created 
+on first login.  Firebase SDK, 
+Admin SDK on 
+backend.     
+H
+i
+g
+h 
+I
+N
+F
+-
+3 As a dev team, we can host 
+realtime sockets.     Socket server 
+running on small Node 
+instance.  
+   Client 
+connects/disconnects 
+successfully.  Express + Socket.IO; 
+separate process.     
+H
+i
+g
+h 
+I
+N
+F
+-
+4 As a dev, I can configure env 
+management.     .ENV files for 
+dev/stage/prod 
+documented.  
+   Secrets never 
+committed.  Use 
+Doppler/1Password 
+share.    
+M
+e
+d 
+ 
+🧭 EPIC 2 — Authentication & Profiles  
+Stories  
+ID Story  Acceptance Criteria  Notes  Pr
+io
+rit
+y 
+A
+UT
+H-
+1 As a user, I can sign up/sign in 
+with Email, Google, or Apple.     Works on 
+mobile/web.  
+   JWT verified on 
+server.  Firebase Auth.     
+A
+UT
+H-
+2 As a user, I can edit my profile 
+(name, avatar).     Profile updates 
+persist.  
+   Validation 
+messages.  Upload avatar → 
+Firebase Storage.    
+A
+UT
+H-
+3 As a user, I can delete my 
+account (GDPR).     Data 
+anonymised; 
+confirmation modal.  Backend 
+anonymisation 
+script.    
+Dependencies:  INF-2 
+ 
+💒 EPIC 3 — Vendor Onboarding & Listings  
+Stories  
+I
+D Story  Acceptance 
+Criteria  Tech  P
+ri
+o
+ri
+t
+y 
+V
+E
+N
+-
+1 As a vendor, I can complete 
+onboarding and create my 
+business profile.     All required 
+fields validated.  
+   Trial 
+countdown 
+visible.  
+   Status = 
+pending.  Wizard UI, stepper 
+flow.     
+V
+E
+N
+-
+2 As admin, I can approve/reject 
+vendor applications.     Vendor status 
+changes reflect 
+instantly.  Admin portal endpoint 
+/admin/vendors/:id/sta
+tus.     
+V
+E
+N
+-
+3 As a vendor, I can 
+add/edit/delete listings.     CRUD works.  
+   Upload gallery.  
+   Price & 
+location required.  Formik + Firebase 
+Storage.     
+V
+E
+N
+-
+4 As a buyer, I can search listings 
+with filters.     Search returns 
+correct paginated 
+results.  
+   Empty states 
+handled.  Geo query using $near; 
+category filter.     
+V
+E
+N
+-
+5 As a buyer, I can view a listing 
+detail page.     Shows 
+description, 
+gallery, map, 
+reviews.  SSR caching 30 s.     
+V
+EAs a buyer, I can save listings 
+to wishlist.     Toggle heart 
+updates instantly.  Update 
+users.favourites[].    
+N
+-
+6 
+Dependencies:  AUTH, INF  
+ 
+📅 EPIC 4 — Bookings & Calendar  
+ID Story  Acceptance 
+Criteria  Notes  Pri
+ori
+ty 
+BO
+OK
+-1 As a buyer, I can request a booking 
+slot.     Select 
+date/time.  
+   Status = 
+pending.  Date picker w/ 
+vendor 
+availability.     
+BO
+OK
+-2 As a vendor, I can approve or 
+decline booking.     Booking 
+status updates.  
+   Buyer 
+notified.  PATCH 
+/bookings/:id/appr
+ove.     
+BO
+OK
+-3 As a vendor, I can sync my Google 
+Calendar (read -only).     OAuth 
+success.  
+   Busy slots 
+blocked.  Google API v3.    
+BO
+OK
+-4 As a vendor, I can log payment info 
+for a confirmed booking.     Stores 
+amount/method
+/date.  Form update 
+booking doc.    
+BO
+OK
+-5 As a buyer/vendor, I can cancel a 
+booking.     Status → 
+canceled.  
+   Reason 
+captured.  Soft delete 
+pattern.    
+Dependencies:  VEN -3, AUTH  
+ 
+💬 EPIC 5 — Realtime Chat & Notifications  
+ID Story  Acceptance Criteria  Notes  Priori
+ty 
+CHAT -
+1 As buyer/vendor, I can chat in real -time after an 
+enquiry.     Socket join works.  
+   Messages persist.  
+   Typing + seen 
+indicators.  Socket.IO 
+rooms.     
+CHAT -
+2 As a user, I can send images/files.     Upload + preview.  
+   Max 10 MB.  Firebase 
+Storage.    
+NOTIF
+-1 As a user, I receive push notifications for chat & 
+bookings.     Push shown on 
+device.  
+   Badge counts 
+update.  FCM.     
+NOTIF
+-2 As a vendor, I get email alerts for new bookings.     Email template 
+triggers.  SendGrid/Res
+end.    
+Dependencies:  INF-3 
+ 
+⭐ EPIC 6 — Reviews & Ratings  
+I
+D Story  Acceptance 
+Criteria  Notes  Pri
+ori
+ty 
+R
+E
+V-
+1 As a buyer, I can leave a review 
+after a completed booking.     Form 
+validates; saves 
+once.  One -review rule.     
+R
+E
+V-
+2 As a vendor, I can reply to a review.     Single 
+editable reply.  
+   
+Timestamped.  PATCH 
+/reviews/:id/reply
+.   
+R
+E
+V-
+3 As a buyer, I can see average 
+ratings on vendor listing.     Aggregates 
+refresh instantly.  Mongo 
+aggregation 
+pipeline.     
+ 
+📊 EPIC 7 — Vendor Insights Dashboard  
+ID Story  Acceptanc
+e Criteria  Notes  Pr
+io
+rit
+y 
+D
+AS
+H-
+1 As a vendor, I can see monthly & 
+quarterly earnings.     Graph 
+displays 
+totals.  Chart.js/Recharts.     
+D
+AS
+H-
+2 As a vendor, I can view bookings, 
+cancellations, conversion rate.     All KPIs 
+visible.  
+   Filters 
+by period.  Aggregations.     
+D
+AS
+H-
+3 As a vendor, I can view top 
+listings & buyer demographics.     Bar 
+chart + pie 
+chart.  Simplified dummy data 
+allowed if limited stage 
+data.    
+ 
+🧰 EPIC 8 — Admin Portal (Web -Only)  
+ID Story  Acceptance Criteria  Notes  Pri
+ori
+ty 
+AD
+MIN
+-1 As admin, I can log in with 
+elevated role.     Admin only 
+access.  Firebase custom 
+claim.     
+AD
+MIN
+-2 As admin, I can 
+approve/reject vendors & 
+listings.     Buttons update 
+status.  /admin/vendors/:
+id/status.     
+AD
+MIN
+-3 As admin, I can view 
+dashboard analytics.     Charts for users, 
+bookings, ratings.  Chart.js.     
+AD
+MIN
+-4 As admin, I can hide 
+reviews/photos.     Flag toggled + 
+audit log.  hiddenByAdmin.    
+AD
+MIN
+-5 As admin, I can view disputes 
+& notes.     Read -only chat 
+snapshot.  
+   Add notes.  Simple tab view.    
+ 
+🪙 EPIC 9 — Subscription & Trial  
+ID Story  Acceptance Criteria  Notes  Priori
+ty 
+SUB
+-1 As a vendor, I can see my free -trial countdown.     Days left visible.  
+   Locked banner post -
+expiry.  trialEndDate 
+calc.     
+SUB
+-2 As admin, I can toggle a vendor’s subscription 
+manually.     Status changes 
+propagate.  Admin panel 
+toggle.    
+SUB
+-3 (Later) As vendor, I can pay £29/month via Stripe.     Deferred Phase 2  — — 
+ 
+🖥️ EPIC 10 — QA, Security, & Release  
+ID Story  Acceptance Criteria  Notes  Pri
+orit
+y 
+Q
+A-
+1 As a QA, I can run automated 
+test suite.     >80% core coverage.  
+   CI passes.  Jest + 
+Playwright.     
+S
+E
+C-
+1 As admin, I can export basic 
+audit logs.     CSV download.  
+   Time -range filter.  Simple 
+aggregation.    
+R
+EL
+-1 As founder, I can view 
+staging & prod builds.     Vercel preview + 
+TestFlight link shared.  Manual sign -
+off gates.     
+ 
+🧩 Cross -Epic Dependencies (Summary)  
+Dependenc
+y Dependent Epics  
+INF All other epics  
+AUTH  Vendor Onboarding, Listings, Bookings, 
+Chat  
+VEN  Bookings, Reviews, Dashboard  
+CHAT  Notifications, Admin  
+BOOK  Reviews  
+DASH  Admin (analytics)  
+ 
+📅 Suggested Sprint Plan (Example)  
+Sprint  Focus  Major Deliverables  
+Sprint 1 
+(Weeks 1 -3) Infrastructure + Auth  INF, AUTH complete; base 
+deploys live.  
+Sprint 2 
+(Weeks 4 -6) Vendor Onboarding + Listings + 
+Search  VEN + LISTINGS MVP + Admin 
+approval.  
+Sprint 3 
+(Weeks 7 -9) Bookings + Chat + Notifications  BOOK + CHAT flows end -to-end.  
+Sprint 4 
+(Weeks 10 -
+12) Reviews + Insights + Admin 
+Analytics + Final QA  REV + DASH + ADMIN portal, 
+release candidate.  
+ 
+🧭 Reporting & Workflow Guidelines  
+• Branch naming:  feature/<epic> -<story>  
+• Commit style:  Conventional commits (feat:, fix:, chore:)  
+• Jira states:  Backlog → In Progress → Code Review → QA → Done  
+• Definition of Done:  
+o All AC met  
+o Unit tests pass  
+o API documented in Swagger  
+o Screens responsive  
+o Accessibility check passed  
+o No console errors  
+ 

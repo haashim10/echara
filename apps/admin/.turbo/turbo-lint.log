@@ -1,0 +1,16 @@
+
+> @echara/admin@0.1.0 lint /Users/HaashimsAccount/Desktop/Echara/apps/admin
+> next lint
+
+`next lint` is deprecated and will be removed in Next.js 16.
+For new projects, use create-next-app to choose your preferred linter.
+For existing projects, migrate to the ESLint CLI:
+npx @next/codemod@canary next-lint-to-eslint-cli .
+
+
+   We detected TypeScript in your project and reconfigured your tsconfig.json file for you. Strict-mode is set to false by default.
+   The following mandatory changes were made to your tsconfig.json:
+
+   	- isolatedModules was set to true (requirement for SWC / Babel)
+
+✔ No ESLint warnings or errors

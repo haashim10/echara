@@ -1,0 +1,23 @@
+import { Router } from "express";
+
+import { notImplementedHandler } from "../controllers/base";
+
+const router = Router();
+
+router.post("/", notImplementedHandler("Create/update vendor profile"));
+router.get("/:id", notImplementedHandler("Get vendor by id"));
+router.get(
+  "/:id/insights",
+  notImplementedHandler("Get vendor insights metrics"),
+);
+router.get("/:id/reviews", notImplementedHandler("List vendor reviews"));
+router.post(
+  "/:id/calendar/google/connect",
+  notImplementedHandler("Connect Google Calendar"),
+);
+router.delete(
+  "/:id/calendar/google/disconnect",
+  notImplementedHandler("Disconnect Google Calendar"),
+);
+
+export default router;
