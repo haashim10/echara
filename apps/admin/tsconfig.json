@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "preserve",
+    "types": ["node", "react", "react-dom"],
     "plugins": [
       {
         "name": "next"

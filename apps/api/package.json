@@ -5,7 +5,7 @@
   "type": "module",
   "main": "./dist/server.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts",
+    "dev": "tsx -r dotenv/config --watch src/server.ts",
     "build": "tsc -p tsconfig.json",
     "start": "node dist/server.js",
     "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings=0"
@@ -30,6 +30,7 @@
     "@types/express": "^4.17.21",
     "@types/http-status-codes": "^1.2.0",
     "@types/morgan": "^1.9.9",
+    "@types/node": "^20.19.20",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
     "eslint": "^9.15.0",

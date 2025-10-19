@@ -13,7 +13,7 @@
     "noEmit": true,
     "incremental": true,
     "noFallthroughCasesInSwitch": true,
-    "types": ["node"]
+    "types": ["node", "react", "react-dom"]
   },
   "include": [],
   "exclude": ["node_modules"]

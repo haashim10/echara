@@ -2,14 +2,14 @@
 > @echara/web@0.1.0 dev /Users/HaashimsAccount/Desktop/Echara/apps/web
 > next dev
 
+ ⚠ Port 3000 is in use by process 18675, using available port 3003 instead.
    ▲ Next.js 15.5.4
-   - Local:        http://localhost:3000
-   - Network:      http://192.168.1.161:3000
+   - Local:        http://localhost:3003
+   - Network:      http://192.168.1.161:3003
 
  ✓ Starting...
- ✓ Ready in 1639ms
- ○ Compiling / ...
-[Error: Can't resolve 'tailwindcss' in '/Users/HaashimsAccount/Desktop/Echara/packages/ui/src/styles'] {
+ ✓ Ready in 2.1s
+Account/Desktop/Echara/packages/ui/src/styles'] {
   details: "resolve 'tailwindcss' in '/Users/HaashimsAccount/Desktop/Echara/packages/ui/src/styles'\n" +
     '  Parsed request is a module\n' +
     '  using description file: /Users/HaashimsAccount/Desktop/Echara/packages/ui/package.json (relative path: ./src/styles)\n' +
@@ -117,3 +117,4 @@ Syntax error: tailwindcss: /Users/HaashimsAccount/Desktop/Echara/apps/web/src/ap
  ✓ Compiled /favicon.ico in 352ms (594 modules)
  GET /favicon.ico 500 in 385ms
 <w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!/Users/HaashimsAccount/Desktop/Echara/apps/web/src/app/globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError

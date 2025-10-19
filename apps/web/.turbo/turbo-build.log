@@ -1,0 +1,8 @@
+
+> @echara/web@0.1.0 build /Users/HaashimsAccount/Desktop/Echara/apps/web
+> next build
+
+   ▲ Next.js 15.5.4
+
+   Creating an optimized production build ...
+ ELIFECYCLE  Command failed with exit code 130.

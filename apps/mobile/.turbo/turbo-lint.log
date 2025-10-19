@@ -1,0 +1,5 @@
+
+
+> @echara/mobile@0.1.0 lint /Users/HaashimsAccount/Desktop/Echara/apps/mobile
+> eslint "**/*.{ts,tsx}"
+

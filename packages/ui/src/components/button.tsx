@@ -1,16 +1,27 @@
-import { Slot } from "@radix-ui/react-slot";
+/// <reference types="react" />
 import clsx from "clsx";
-import type { ButtonHTMLAttributes, PropsWithChildren } from "react";
+import {
+  Children,
+  cloneElement,
+  isValidElement,
+  type ComponentPropsWithoutRef,
+  type ReactElement,
+  type ReactNode,
+  type ButtonHTMLAttributes,
+} from "react";
 
 type ButtonVariant = "primary" | "secondary" | "ghost";
 type ButtonSize = "sm" | "md" | "lg";
 
-export interface ButtonProps
-  extends PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement>> {
+export interface ButtonProps extends ComponentPropsWithoutRef<"button"> {
+  children?: ReactNode;
   variant?: ButtonVariant;
   size?: ButtonSize;
   loading?: boolean;
   asChild?: boolean;
+  disabled?: boolean;
+  type?: "button" | "submit" | "reset";
+  className?: string;
 }
 
 const baseClasses =
@@ -42,7 +53,7 @@ export function Button({
   type,
   ...rest
 }: ButtonProps) {
-  const Component = asChild ? Slot : "button";
+  const Component = asChild ? ("span" as const) : ("button" as const);
 
   const resolvedClassName = clsx(
     baseClasses,
@@ -58,14 +69,14 @@ export function Button({
   };
 
   if (asChild) {
-    return (
-      <Component {...commonProps} {...rest}>
-        {loading && (
-          <span className="mr-2 inline-flex h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
-        )}
-        {children}
-      </Component>
-    );
+    const elements = Children.toArray(children).filter(isValidElement) as ReactElement[];
+    const only = elements[0] as ReactElement<{ className?: string }>;
+    if (!only) return null;
+    const passthrough = rest as Record<string, unknown>;
+    return cloneElement(only, {
+      ...passthrough,
+      className: clsx(only.props.className, resolvedClassName),
+    });
   }
 
   return (

@@ -1,0 +1,16 @@
+{
+  "name": "@echara/tokens",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./nativewind": "./src/nativewind.ts",
+    "./theme.css": "./src/theme.css"
+  },
+  "sideEffects": [
+    "./src/theme.css"
+  ]
+}

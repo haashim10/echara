@@ -1,0 +1,12 @@
+
+> @echara/admin@0.1.0 dev /Users/HaashimsAccount/Desktop/Echara/apps/admin
+> next dev
+
+ ⚠ Port 3000 is in use by process 18675, using available port 3002 instead.
+   ▲ Next.js 15.5.4
+   - Local:        http://localhost:3002
+   - Network:      http://192.168.1.161:3002
+
+ ✓ Starting...
+ ✓ Ready in 2.1s
+s

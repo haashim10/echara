@@ -1,0 +1,29 @@
+
+> @echara/api@0.1.0 build /Users/HaashimsAccount/Desktop/Echara/apps/api
+> tsc -p tsconfig.json
+
+src/app.ts(8,47): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean './middleware/error-handler.js'?
+src/app.ts(9,24): error TS2834: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Consider adding an extension to the import path.
+src/config/database.ts(5,24): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean './logger.js'?
+src/middleware/error-handler.ts(4,24): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean '../config/logger.js'?
+src/middleware/error-handler.ts(5,38): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean '../utils/api-error.js'?
+src/routes/admin.routes.ts(3,39): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean '../controllers/base.js'?
+src/routes/auth.routes.ts(3,39): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean '../controllers/base.js'?
+src/routes/bookings.routes.ts(3,39): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean '../controllers/base.js'?
+src/routes/chats.routes.ts(3,39): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean '../controllers/base.js'?
+src/routes/index.ts(3,25): error TS2307: Cannot find module './admin.routes' or its corresponding type declarations.
+src/routes/index.ts(4,24): error TS2307: Cannot find module './auth.routes' or its corresponding type declarations.
+src/routes/index.ts(5,28): error TS2307: Cannot find module './bookings.routes' or its corresponding type declarations.
+src/routes/index.ts(6,25): error TS2307: Cannot find module './chats.routes' or its corresponding type declarations.
+src/routes/index.ts(7,28): error TS2307: Cannot find module './listings.routes' or its corresponding type declarations.
+src/routes/index.ts(8,33): error TS2307: Cannot find module './notifications.routes' or its corresponding type declarations.
+src/routes/index.ts(9,27): error TS2307: Cannot find module './reviews.routes' or its corresponding type declarations.
+src/routes/index.ts(10,27): error TS2307: Cannot find module './vendors.routes' or its corresponding type declarations.
+src/routes/listings.routes.ts(3,39): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean '../controllers/base.js'?
+src/routes/notifications.routes.ts(3,39): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean '../controllers/base.js'?
+src/routes/reviews.routes.ts(3,39): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean '../controllers/base.js'?
+src/routes/vendors.routes.ts(3,39): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean '../controllers/base.js'?
+src/server.ts(3,27): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean './app.js'?
+src/server.ts(4,35): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean './config/database.js'?
+src/server.ts(5,24): error TS2835: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean './config/logger.js'?
+ ELIFECYCLE  Command failed with exit code 2.
