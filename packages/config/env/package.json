@@ -1,11 +1,8 @@
 {
   "name": "@echara/env",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
-  "type": "module",
   "main": "./src/index.ts",
-  "dependencies": {
-    "zod": "^3.23.8",
-    "dotenv": "^16.4.5"
-  }
+  "types": "./src/index.ts",
+  "license": "MIT"
 }

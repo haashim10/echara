@@ -43,9 +43,11 @@ export default function AdminDashboard() {
             activate while wiring the Express admin routes.
           </p>
         </div>
-        <Button asChild variant="secondary">
-          <Link href="/admin/vendors">View vendors queue</Link>
-        </Button>
+        <Link href="/admin/vendors">
+          <Button size="secondary">
+            View vendors queue
+          </Button>
+        </Link>
       </header>
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

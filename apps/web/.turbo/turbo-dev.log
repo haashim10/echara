@@ -1,119 +1,19 @@
 
+
 > @echara/web@0.1.0 dev /Users/HaashimsAccount/Desktop/Echara/apps/web
 > next dev
 
-   ▲ Next.js 15.5.4
-   - Local:        http://localhost:3000
-   - Network:      http://192.168.1.161:3000
+ [33m[1m⚠[22m[39m Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/HaashimsAccount/package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * /Users/HaashimsAccount/Desktop/Echara/pnpm-lock.yaml
 
- ✓ Starting...
- ✓ Ready in 1639ms
- ○ Compiling / ...
-[Error: Can't resolve 'tailwindcss' in '/Users/HaashimsAccount/Desktop/Echara/packages/ui/src/styles'] {
-  details: "resolve 'tailwindcss' in '/Users/HaashimsAccount/Desktop/Echara/packages/ui/src/styles'\n" +
-    '  Parsed request is a module\n' +
-    '  using description file: /Users/HaashimsAccount/Desktop/Echara/packages/ui/package.json (relative path: ./src/styles)\n' +
-    '    resolve as module\n' +
-    "      /Users/HaashimsAccount/Desktop/Echara/packages/ui/src/styles/node_modules doesn't exist or is not a directory\n" +
-    "      /Users/HaashimsAccount/Desktop/Echara/packages/ui/src/node_modules doesn't exist or is not a directory\n" +
-    '      looking for modules in /Users/HaashimsAccount/Desktop/Echara/packages/ui/node_modules\n' +
-    '        single file module\n' +
-    '          using description file: /Users/HaashimsAccount/Desktop/Echara/packages/ui/package.json (relative path: ./node_modules/tailwindcss)\n' +
-    '            no extension\n' +
-    "              /Users/HaashimsAccount/Desktop/Echara/packages/ui/node_modules/tailwindcss doesn't exist\n" +
-    '            .css\n' +
-    "              /Users/HaashimsAccount/Desktop/Echara/packages/ui/node_modules/tailwindcss.css doesn't exist\n" +
-    "        /Users/HaashimsAccount/Desktop/Echara/packages/ui/node_modules/tailwindcss doesn't exist\n" +
-    "      /Users/HaashimsAccount/Desktop/Echara/packages/node_modules doesn't exist or is not a directory\n" +
-    '      looking for modules in /Users/HaashimsAccount/Desktop/Echara/node_modules\n' +
-    '        single file module\n' +
-    '          using description file: /Users/HaashimsAccount/Desktop/Echara/package.json (relative path: ./node_modules/tailwindcss)\n' +
-    '            no extension\n' +
-    "              /Users/HaashimsAccount/Desktop/Echara/node_modules/tailwindcss doesn't exist\n" +
-    '            .css\n' +
-    "              /Users/HaashimsAccount/Desktop/Echara/node_modules/tailwindcss.css doesn't exist\n" +
-    "        /Users/HaashimsAccount/Desktop/Echara/node_modules/tailwindcss doesn't exist\n" +
-    "      /Users/HaashimsAccount/Desktop/node_modules doesn't exist or is not a directory\n" +
-    '      looking for modules in /Users/HaashimsAccount/node_modules\n' +
-    '        single file module\n' +
-    '          using description file: /Users/HaashimsAccount/package.json (relative path: ./node_modules/tailwindcss)\n' +
-    '            no extension\n' +
-    "              /Users/HaashimsAccount/node_modules/tailwindcss doesn't exist\n" +
-    '            .css\n' +
-    "              /Users/HaashimsAccount/node_modules/tailwindcss.css doesn't exist\n" +
-    "        /Users/HaashimsAccount/node_modules/tailwindcss doesn't exist\n" +
-    "      /Users/node_modules doesn't exist or is not a directory\n" +
-    "      /node_modules doesn't exist or is not a directory\n" +
-    '      looking for modules in /Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/bin/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/node_modules\n' +
-    '        single file module\n' +
-    '          using description file: /Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/package.json (relative path: ./dist/bin/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/node_modules/tailwindcss)\n' +
-    '            no extension\n' +
-    "              /Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/bin/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/node_modules/tailwindcss doesn't exist\n" +
-    '            .css\n' +
-    "              /Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/bin/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/node_modules/tailwindcss.css doesn't exist\n" +
-    "        /Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/bin/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/node_modules/tailwindcss doesn't exist"
-}
- ⨯ ./src/app/globals.css:1:1
-Syntax error: tailwindcss: /Users/HaashimsAccount/Desktop/Echara/apps/web/src/app/globals.css Can't resolve 'tailwindcss' in '/Users/HaashimsAccount/Desktop/Echara/packages/ui/src/styles'
+ [33m[1m⚠[22m[39m Port 3000 is in use by process 45263, using available port 3001 instead.
+   [1m[38;2;173;127;168m▲ Next.js 15.5.4[39m[22m
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.161:3001
 
-> 1 | @import "@echara/ui/styles/theme.css";
-    | ^
-  2 | 
-  3 | body {
-<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!/Users/HaashimsAccount/Desktop/Echara/apps/web/src/app/globals.css': No serializer registered for PostCSSSyntaxError
-<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
-[Error: Can't resolve 'tailwindcss' in '/Users/HaashimsAccount/Desktop/Echara/packages/ui/src/styles'] {
-  details: "resolve 'tailwindcss' in '/Users/HaashimsAccount/Desktop/Echara/packages/ui/src/styles'\n" +
-    '  Parsed request is a module\n' +
-    '  using description file: /Users/HaashimsAccount/Desktop/Echara/packages/ui/package.json (relative path: ./src/styles)\n' +
-    '    resolve as module\n' +
-    "      /Users/HaashimsAccount/Desktop/Echara/packages/ui/src/styles/node_modules doesn't exist or is not a directory\n" +
-    "      /Users/HaashimsAccount/Desktop/Echara/packages/ui/src/node_modules doesn't exist or is not a directory\n" +
-    '      looking for modules in /Users/HaashimsAccount/Desktop/Echara/packages/ui/node_modules\n' +
-    '        single file module\n' +
-    '          using description file: /Users/HaashimsAccount/Desktop/Echara/packages/ui/package.json (relative path: ./node_modules/tailwindcss)\n' +
-    '            no extension\n' +
-    "              /Users/HaashimsAccount/Desktop/Echara/packages/ui/node_modules/tailwindcss doesn't exist\n" +
-    '            .css\n' +
-    "              /Users/HaashimsAccount/Desktop/Echara/packages/ui/node_modules/tailwindcss.css doesn't exist\n" +
-    "        /Users/HaashimsAccount/Desktop/Echara/packages/ui/node_modules/tailwindcss doesn't exist\n" +
-    "      /Users/HaashimsAccount/Desktop/Echara/packages/node_modules doesn't exist or is not a directory\n" +
-    '      looking for modules in /Users/HaashimsAccount/Desktop/Echara/node_modules\n' +
-    '        single file module\n' +
-    '          using description file: /Users/HaashimsAccount/Desktop/Echara/package.json (relative path: ./node_modules/tailwindcss)\n' +
-    '            no extension\n' +
-    "              /Users/HaashimsAccount/Desktop/Echara/node_modules/tailwindcss doesn't exist\n" +
-    '            .css\n' +
-    "              /Users/HaashimsAccount/Desktop/Echara/node_modules/tailwindcss.css doesn't exist\n" +
-    "        /Users/HaashimsAccount/Desktop/Echara/node_modules/tailwindcss doesn't exist\n" +
-    "      /Users/HaashimsAccount/Desktop/node_modules doesn't exist or is not a directory\n" +
-    '      looking for modules in /Users/HaashimsAccount/node_modules\n' +
-    '        single file module\n' +
-    '          using description file: /Users/HaashimsAccount/package.json (relative path: ./node_modules/tailwindcss)\n' +
-    '            no extension\n' +
-    "              /Users/HaashimsAccount/node_modules/tailwindcss doesn't exist\n" +
-    '            .css\n' +
-    "              /Users/HaashimsAccount/node_modules/tailwindcss.css doesn't exist\n" +
-    "        /Users/HaashimsAccount/node_modules/tailwindcss doesn't exist\n" +
-    "      /Users/node_modules doesn't exist or is not a directory\n" +
-    "      /node_modules doesn't exist or is not a directory\n" +
-    '      looking for modules in /Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/bin/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/node_modules\n' +
-    '        single file module\n' +
-    '          using description file: /Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/package.json (relative path: ./dist/bin/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/node_modules/tailwindcss)\n' +
-    '            no extension\n' +
-    "              /Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/bin/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/node_modules/tailwindcss doesn't exist\n" +
-    '            .css\n' +
-    "              /Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/bin/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/node_modules/tailwindcss.css doesn't exist\n" +
-    "        /Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/bin/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules:/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/node_modules/tailwindcss doesn't exist"
-}
- ⨯ ./src/app/globals.css:1:1
-Syntax error: tailwindcss: /Users/HaashimsAccount/Desktop/Echara/apps/web/src/app/globals.css Can't resolve 'tailwindcss' in '/Users/HaashimsAccount/Desktop/Echara/packages/ui/src/styles'
-
-> 1 | @import "@echara/ui/styles/theme.css";
-    | ^
-  2 | 
-  3 | body {
- GET / 500 in 5903ms
- ✓ Compiled /favicon.ico in 352ms (594 modules)
- GET /favicon.ico 500 in 385ms
-<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!/Users/HaashimsAccount/Desktop/Echara/node_modules/.pnpm/next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!/Users/HaashimsAccount/Desktop/Echara/apps/web/src/app/globals.css': No serializer registered for PostCSSSyntaxError
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 327.5s

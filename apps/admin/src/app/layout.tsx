@@ -1,24 +1,12 @@
+// apps/admin/src/app/layout.tsx
+
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const poppins = Poppins({
-  variable: "--font-display",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-});
-
 export const metadata: Metadata = {
-  title: "Echara Admin — Moderation & analytics",
+  title: "Echara Admin",
   description:
-    "Internal control centre for vendor approvals, listings moderation, analytics, and platform health monitoring.",
+    "Admin console for managing Echara vendors, listings, and operations.",
 };
 
 export default function RootLayout({
@@ -28,9 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${poppins.variable} antialiased`}>
-        {children}
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

@@ -31,12 +31,17 @@ export default function Home() {
               dream team without losing track of the details.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Button asChild size="lg">
-                <Link href="/buyer/listings">Start Exploring Vendors</Link>
-              </Button>
-              <Button asChild size="lg" variant="secondary">
-                <Link href="/vendor/onboarding">List My Business</Link>
-              </Button>
+              <Link href="/buyer/listings">
+                <Button size="lg">
+                  Start Exploring Vendors
+                </Button>
+              </Link>
+
+              <Link href="/vendor/onboarding">
+                <Button size="lg" variant="secondary">
+                  List My Business
+                </Button>
+              </Link>
             </div>
             <div className="flex flex-col gap-2 text-sm text-[color-mix(in srgb,var(--color-foreground) 60%,white)]">
               <span>✔ 60-day free trial for vendors • No booking fees for buyers</span>
@@ -109,9 +114,12 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <Button asChild className="mt-6" variant="ghost">
-              <Link href="/buyer/listings">Browse by category →</Link>
-            </Button>
+            <Link href="/buyer/listings">
+              <Button className="mt-6" variant="ghost">
+                Browse by category →
+              </Button>
+            </Link>
+            
           </div>
           <div className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-white/85 p-8 shadow-[var(--shadow-card)]">
             <h2 className="font-display text-2xl text-[var(--color-foreground)]">
@@ -132,9 +140,11 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <Button asChild className="mt-6" variant="secondary">
-              <Link href="/vendor/onboarding">See vendor toolkit →</Link>
-            </Button>
+            <Link href="/vendor/onboarding">
+              <Button className="mt-6" variant="secondary">
+                See vendor toolkit →
+              </Button>
+            </Link>
           </div>
         </section>
 
