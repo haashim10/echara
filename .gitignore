@@ -15,3 +15,7 @@ apps/*/.npm-cache/
 .expo/
 .expo-shared/
 
+#Env files
+.env
+.env.*
+apps/**/.env*
