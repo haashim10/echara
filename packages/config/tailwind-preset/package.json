@@ -1,0 +1,8 @@
+{
+  "name": "@echara/tailwind-preset",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index.js",
+  "license": "MIT"
+}
+

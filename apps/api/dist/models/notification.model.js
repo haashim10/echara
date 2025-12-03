@@ -1,12 +1,15 @@
-import { Schema, model, models } from "mongoose";
-const notificationSchema = new Schema({
-    userId: { type: Schema.Types.ObjectId, ref: "User", required: true, index: true },
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.NotificationModel = void 0;
+const mongoose_1 = require("mongoose");
+const notificationSchema = new mongoose_1.Schema({
+    userId: { type: mongoose_1.Schema.Types.ObjectId, ref: "User", required: true, index: true },
     type: { type: String, required: true },
     title: { type: String, required: true },
     body: { type: String, required: true },
-    data: { type: Schema.Types.Mixed },
+    data: { type: mongoose_1.Schema.Types.Mixed },
     isRead: { type: Boolean, default: false },
 }, {
     timestamps: { createdAt: true, updatedAt: false },
 });
-export const NotificationModel = models.Notification ?? model("Notification", notificationSchema);
+exports.NotificationModel = mongoose_1.models.Notification ?? (0, mongoose_1.model)("Notification", notificationSchema);

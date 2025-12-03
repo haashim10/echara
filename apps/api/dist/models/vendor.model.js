@@ -1,15 +1,18 @@
-import { Schema, model, models } from "mongoose";
-const socialLinksSchema = new Schema({
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.VendorModel = void 0;
+const mongoose_1 = require("mongoose");
+const socialLinksSchema = new mongoose_1.Schema({
     instagram: String,
     tiktok: String,
     website: String,
 }, { _id: false });
-const geoSchema = new Schema({
+const geoSchema = new mongoose_1.Schema({
     lat: { type: Number, required: true },
     lng: { type: Number, required: true },
 }, { _id: false });
-const vendorSchema = new Schema({
-    userId: { type: Schema.Types.ObjectId, ref: "User", required: true, unique: true },
+const vendorSchema = new mongoose_1.Schema({
+    userId: { type: mongoose_1.Schema.Types.ObjectId, ref: "User", required: true, unique: true },
     businessName: { type: String, required: true },
     yearsInBusiness: { type: Number, default: 0 },
     description: { type: String, default: "" },
@@ -35,4 +38,4 @@ const vendorSchema = new Schema({
 }, {
     timestamps: true,
 });
-export const VendorModel = models.Vendor ?? model("Vendor", vendorSchema);
+exports.VendorModel = mongoose_1.models.Vendor ?? (0, mongoose_1.model)("Vendor", vendorSchema);

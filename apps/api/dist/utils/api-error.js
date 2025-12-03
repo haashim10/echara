@@ -1,15 +1,21 @@
-import { StatusCodes, getReasonPhrase } from "http-status-codes";
-export class ApiError extends Error {
-    constructor(statusCode, message = getReasonPhrase(statusCode), details) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ApiError = void 0;
+exports.isApiError = isApiError;
+exports.createNotFoundError = createNotFoundError;
+const http_status_codes_1 = require("http-status-codes");
+class ApiError extends Error {
+    constructor(statusCode, message = (0, http_status_codes_1.getReasonPhrase)(statusCode), details) {
         super(message);
         this.statusCode = statusCode;
         this.details = details;
         Error.captureStackTrace(this, this.constructor);
     }
 }
-export function isApiError(error) {
+exports.ApiError = ApiError;
+function isApiError(error) {
     return error instanceof ApiError;
 }
-export function createNotFoundError(message = "Resource not found") {
-    return new ApiError(StatusCodes.NOT_FOUND, message);
+function createNotFoundError(message = "Resource not found") {
+    return new ApiError(http_status_codes_1.StatusCodes.NOT_FOUND, message);
 }
